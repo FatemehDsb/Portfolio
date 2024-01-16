@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-}
-
 .primary-header {
   margin-bottom: 5px;
 }
@@ -70,7 +66,7 @@ body {
   gap: 10px;
 }
 .projects-section img {
-  width: 100%;
+  width: 400px;
 }
 
 @media (min-width: 50em) {
