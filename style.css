@@ -1,0 +1,91 @@
+/* Add your existing CSS code here */
+body {
+  --max-width: 1100px;
+  --padding: 2rem;
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
+.primary-header {
+  margin-bottom: 5px;
+}
+.primary-header .social-links {
+  display: flex;
+  flex-direction: row;
+}
+.primary-header .social-links a img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.column-one {
+  flex-grow: 2;
+  background-color: #114c5c;
+  padding: 2px;
+  border: 1px solid black;
+}
+
+.column-two {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 100%;
+  border: 1px solid black;
+}
+.column-two #profile-image {
+  width: 100%;
+  height: 250px;
+  background-color: #e36415;
+}
+.column-two .side-box {
+  width: 100%;
+  background-color: #32127a;
+}
+.column-two .side-box .unnumbered-items {
+  list-style: none;
+}
+
+.column-three {
+  border: 1px solid rgb(0, 255, 51);
+}
+
+.projects-section {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.projects-section img {
+  width: 400px;
+}
+
+@media (min-width: 50em) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-container .column-one {
+    width: 60%;
+    height: 250px;
+  }
+  .main-container .column-two {
+    width: 35%;
+    flex-direction: column;
+  }
+  .projects-section {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */
