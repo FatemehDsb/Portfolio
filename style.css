@@ -1,6 +1,7 @@
 /* Add your existing CSS code here */
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -8,9 +9,6 @@ body {
   margin-right: 40px;
 }
 
-.primary-header {
-  margin-bottom: 5px;
-}
 .primary-header .social-links {
   display: flex;
   flex-direction: row;
@@ -18,6 +16,11 @@ body {
 .primary-header .social-links a img {
   width: 30px;
   margin-left: 10px;
+  transition: transform 0.5s ease;
+}
+.primary-header .social-links a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .main-container {
@@ -34,7 +37,37 @@ body {
   padding: 10px;
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.column-one #cv-button {
+  background-color: #d29447;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.column-one #cv-button:hover {
+  background-color: #d18426;
+}
+.column-one #contact-button {
+  background-color: #b75957;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.column-one #contact-button:hover {
+  background-color: #b54240;
 }
 
 .column-two {
@@ -44,18 +77,31 @@ body {
   width: 100%;
 }
 .column-two #profile-image {
-  width: 100%;
-  height: 200px;
   border-radius: 5px;
   background-color: #d29447;
 }
+.column-two #profile-image img {
+  width: 100%;
+}
 .column-two .side-box {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 100%;
   border-radius: 5px;
   background-color: #b75957;
+  transition: transform 0.5s ease;
 }
-.column-two .side-box .unnumbered-items {
-  list-style: none;
+.column-two .side-box:hover {
+  transform: scale(1.1);
+}
+.column-two .side-box .side-box-image {
+  width: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+.column-two .side-box .side-box-image:hover {
+  transform: scale(1.1);
 }
 
 .projects-section {
@@ -68,6 +114,12 @@ body {
   justify-content: space-around;
   gap: 5px;
 }
+.projects-section h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  color: #fff;
+}
 .projects-section .project {
   padding: 20px;
 }
@@ -75,11 +127,20 @@ body {
   width: 90%;
   border-radius: 5px;
 }
+.projects-section .project .project-image {
+  transition: transform 0.3s ease-in-out;
+}
+.projects-section .project .project-image:hover {
+  transform: scale(1.1);
+}
+.projects-section .project .project-link:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.399);
+}
 
 @media (min-width: 50em) {
   body {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
   body .main-container {
     display: flex;
@@ -87,13 +148,15 @@ body {
   }
   body .main-container .column-one {
     width: 60%;
-    height: 350px;
   }
   body .main-container .column-two {
     width: 35%;
     flex-direction: column;
   }
+  body .main-container .column-two .side-box {
+    flex-direction: row;
+  }
   body .projects-section .project img {
-    width: 50%;
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
