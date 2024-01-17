@@ -1,13 +1,7 @@
-/* Add your existing CSS code here */
+/* Add your existing SCSS code here */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: "Montserrat", sans-serif;
-}
-
-html, body {
-  height: 100%;
 }
 
 body {
@@ -26,16 +20,8 @@ body {
   transform: translateY(0);
 }
 
-.container {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .primary-header {
-  height: 40px;
-  margin-bottom: 5px;
-  border-radius: 5px;
+  height: 50px;
 }
 .primary-header .social-links {
   display: flex;
@@ -52,11 +38,14 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.container {
+  height: 100vh;
+}
+
 .main-container {
-  flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   gap: 5px;
 }
@@ -64,30 +53,28 @@ body {
 .column-one {
   flex-grow: 2;
   background-color: rgba(69, 158, 172, 0.8352941176);
-  padding: 20px 20px;
+  padding: 10px 20px;
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  padding-bottom: 40px;
-}
-.column-one i {
-  font-size: 0.8rem;
-}
-.column-one p {
-  margin-top: 30px;
 }
 .column-one div {
   text-align: center;
 }
-.column-one #cv-button {
-  margin-top: 20px;
+.column-one .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.column-one .buttons #cv-button {
   width: 150px;
+  height: 40px;
   text-align: center;
   background-color: #d29447;
   display: inline-block;
-  padding: 5px 20px;
+  padding: 8px 20px;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -95,16 +82,16 @@ body {
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.column-one #cv-button:hover {
+.column-one .buttons #cv-button:hover {
   background-color: #d18426;
 }
-.column-one #contact-button {
-  margin-top: 10px;
+.column-one .buttons #contact-button {
+  height: 40px;
   width: 150px;
   text-align: center;
   background-color: #b75957;
   display: inline-block;
-  padding: 5px 20px;
+  padding: 8px 20px;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -112,7 +99,7 @@ body {
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.column-one #contact-button:hover {
+.column-one .buttons #contact-button:hover {
   background-color: #b54240;
 }
 
@@ -123,6 +110,7 @@ body {
   width: 100%;
 }
 .column-two #profile-image {
+  border: 1px solid green;
   border-radius: 5px;
   background-color: rgba(210, 148, 71, 0.937254902);
 }
@@ -132,37 +120,40 @@ body {
 .column-two .side-box {
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  width: 200px;
+  width: 100%;
   border-radius: 5px;
   background-color: hsla(1, 40%, 53%, 0.922);
-  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .column-two .side-box div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1764705882);
+  gap: 1px;
+  background-color: rgba(255, 255, 255, 0.3607843137);
   border-radius: 5px;
+  padding: 10px;
 }
 .column-two .side-box .side-box-image {
-  width: 20px;
+  width: 25px;
   transition: transform 0.3s ease-in-out;
 }
 .column-two .side-box .logo-small {
-  width: 30px;
+  width: 60px;
 }
 .column-two .side-box #dialux-logo {
   width: 15px;
+  height: 20px;
 }
 .column-two .side-box .side-box-image:hover {
   transform: scale(1.1);
 }
 
 .projects-section {
-  background-color: hsla(7, 5%, 61%, 0.347);
+  background-color: hsla(1, 40%, 53%, 0.347);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -183,7 +174,7 @@ body {
   padding: 20px;
 }
 .projects-section .project img {
-  width: 50%;
+  width: 70%;
   border-radius: 5px;
 }
 .projects-section .project .project-image {
@@ -201,31 +192,35 @@ body {
     margin-left: 200px;
     margin-right: 200px;
   }
-  body .main-container {
-    display: flex;
+  .main-container {
     flex-direction: row;
-  }
-  body .main-container .column-one {
-    width: 40%;
-    font-size: 0.9rem;
-  }
-  body .main-container .column-two {
-    width: 40%;
+    border: 1px solid rgb(205, 18, 18);
     min-width: 250px;
+  }
+  .main-container .box-1 {
+    width: 10%;
+    min-width: 250px;
+  }
+  .main-container .box-1 .column-two {
+    border: 1px solid blue;
     flex-direction: column;
   }
-  body .main-container .column-two .side-box {
+  .main-container .box-1 .column-two .side-box {
     flex-direction: column;
     gap: 20px;
   }
-  body .main-container .column-two .side-box div img, body .main-container .column-two .side-box div #dialux-logo {
-    width: 40px;
-    height: 40px;
+  .main-container .box-1 .column-two .side-box div img, .main-container .box-1 .column-two .side-box div #dialux-logo {
+    width: 30px;
+    height: 30px;
   }
-  body .main-container .column-two .side-box div .logo-small {
-    width: 70px;
+  .main-container .box-1 .column-two .side-box div .logo-small {
+    width: 60px;
   }
-  body .projects-section .project img {
+  .column-one {
+    width: 40%;
+    font-size: 0.9rem;
+  }
+  .projects-section .project img {
     width: 50%;
     border: 1px solid rgb(255, 255, 255);
   }
