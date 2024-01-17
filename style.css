@@ -123,7 +123,7 @@ body {
   gap: 4px;
   background-color: rgba(213, 206, 206, 0.6039215686);
   border-radius: 5px;
-  padding: 3px;
+  padding: 10px;
 }
 .column-two .side-box .side-box-image {
   width: 25px;
@@ -194,7 +194,7 @@ body {
   }
   body .main-container .column-two .side-box {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
   body .projects-section .project img {
     width: 50%;
