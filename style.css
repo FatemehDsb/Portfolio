@@ -1,6 +1,8 @@
 /* Add your existing CSS code here */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -18,6 +20,10 @@ body {
 .box.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.container {
+  height: 100vh;
 }
 
 .primary-header {
@@ -51,12 +57,19 @@ body {
 .column-one {
   flex-grow: 2;
   background-color: rgba(69, 158, 172, 0.8352941176);
-  padding: 10px 20px;
+  padding: 20px 20px;
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  padding-bottom: 40px;
+}
+.column-one i {
+  font-size: 0.8rem;
+}
+.column-one p {
+  margin-top: 30px;
 }
 .column-one div {
   text-align: center;
@@ -79,6 +92,7 @@ body {
   background-color: #d18426;
 }
 .column-one #contact-button {
+  margin-top: 10px;
   width: 150px;
   text-align: center;
   background-color: #b75957;
@@ -111,33 +125,30 @@ body {
 .column-two .side-box {
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  width: 200px;
   border-radius: 5px;
   background-color: hsla(1, 40%, 53%, 0.922);
-  padding-left: 10px;
-  padding-right: 10px;
+  gap: 10px;
 }
 .column-two .side-box div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  gap: 1px;
-  background-color: rgba(255, 255, 255, 0.3607843137);
-  border-radius: 5px;
   padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1764705882);
+  border-radius: 5px;
 }
 .column-two .side-box .side-box-image {
-  width: 25px;
+  width: 20px;
   transition: transform 0.3s ease-in-out;
 }
 .column-two .side-box .logo-small {
-  width: 60px;
+  width: 30px;
 }
 .column-two .side-box #dialux-logo {
   width: 15px;
-  height: 20px;
 }
 .column-two .side-box .side-box-image:hover {
   transform: scale(1.1);

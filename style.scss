@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,6 +21,11 @@ body{
   opacity: 1;
   transform: translateY(0);
 
+}
+
+.container{
+  height: 100vh;
+ 
 }
 .primary-header {
  
@@ -55,16 +62,25 @@ body{
 }
 
 .column-one {
+
 flex-grow: 2;
 background-color:#459eacd5;
- padding: 10px 20px;
+ padding: 20px 20px;
  border-radius: 5px;
  color: rgb(255, 255, 255);
- font-size: 0.8rem;
+ font-size: 1rem;
  font-family: 'Montserrat', sans-serif;
  font-weight: 300;
+ padding-bottom: 40px;
+ i{
+  font-size:0.8rem;
+ }
+ p{
+  margin-top: 30px;
+ }
  div{
   text-align: center;
+  
  
  }
 
@@ -89,6 +105,7 @@ background-color:#459eacd5;
   }
 
   #contact-button{
+    margin-top: 10px;
     width: 150px;
     text-align: center;
     background-color: #b75957; 
@@ -126,23 +143,22 @@ background-color:#459eacd5;
   .side-box{
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    width: 100%;
+    width: 200px;
     border-radius: 5px;
     background-color:  hsla(1, 40%, 53%, 0.922);
-     padding-left: 10px;
-     padding-right: 10px;
+    gap: 10px;
     
     div{
       
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
-      gap: 1px;
-     background-color: #ffffff5c;
-      border-radius: 5px;
       padding: 10px;
+     background-color: #ffffff2d;
+      border-radius: 5px;
+      
     
     }
 
@@ -150,15 +166,15 @@ background-color:#459eacd5;
 
 
     .side-box-image {
-      width: 25px;
+      width: 20px;
       transition: transform 0.3s ease-in-out;
     }
     .logo-small{
-      width: 60px;
+      width: 30px;
     }
     #dialux-logo{
       width: 15px;
-      height: 20px;
+      
     }
     
     .side-box-image:hover {
