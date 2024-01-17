@@ -63,6 +63,9 @@ body {
 .box-text div {
   text-align: center;
 }
+.box-text p {
+  font-size: 0.9rem;
+}
 .box-text .buttons {
   display: flex;
   flex-direction: row;
@@ -168,7 +171,7 @@ body {
   padding: 5px;
   margin-top: 40px;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 .projects-section .project {
   padding: 20px;
