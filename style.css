@@ -50,7 +50,7 @@ body {
   gap: 5px;
 }
 
-.column-one {
+.box-text {
   flex-grow: 2;
   background-color: rgba(69, 158, 172, 0.8352941176);
   padding: 10px 20px;
@@ -60,15 +60,16 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
-.column-one div {
+.box-text div {
   text-align: center;
 }
-.column-one .buttons {
+.box-text .buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 30px;
 }
-.column-one .buttons #cv-button {
+.box-text .buttons #cv-button {
   width: 150px;
   height: 40px;
   text-align: center;
@@ -82,10 +83,10 @@ body {
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.column-one .buttons #cv-button:hover {
+.box-text .buttons #cv-button:hover {
   background-color: #d18426;
 }
-.column-one .buttons #contact-button {
+.box-text .buttons #contact-button {
   height: 40px;
   width: 150px;
   text-align: center;
@@ -99,25 +100,24 @@ body {
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.column-one .buttons #contact-button:hover {
+.box-text .buttons #contact-button:hover {
   background-color: #b54240;
 }
 
-.column-two {
+.box-profile {
   display: flex;
   flex-direction: row;
   gap: 5px;
   width: 100%;
 }
-.column-two #profile-image {
-  border: 1px solid green;
+.box-profile #profile-image {
   border-radius: 5px;
   background-color: rgba(210, 148, 71, 0.937254902);
 }
-.column-two #profile-image img {
+.box-profile #profile-image img {
   width: 100%;
 }
-.column-two .side-box {
+.box-profile .side-box {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-.column-two .side-box div {
+.box-profile .side-box div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -137,18 +137,18 @@ body {
   border-radius: 5px;
   padding: 10px;
 }
-.column-two .side-box .side-box-image {
+.box-profile .side-box .side-box-image {
   width: 25px;
   transition: transform 0.3s ease-in-out;
 }
-.column-two .side-box .logo-small {
+.box-profile .side-box .logo-small {
   width: 60px;
 }
-.column-two .side-box #dialux-logo {
+.box-profile .side-box #dialux-logo {
   width: 15px;
   height: 20px;
 }
-.column-two .side-box .side-box-image:hover {
+.box-profile .side-box .side-box-image:hover {
   transform: scale(1.1);
 }
 
@@ -201,22 +201,21 @@ body {
     width: 10%;
     min-width: 250px;
   }
-  .main-container .box-1 .column-two {
-    border: 1px solid blue;
+  .main-container .box-1 .box-profile {
     flex-direction: column;
   }
-  .main-container .box-1 .column-two .side-box {
+  .main-container .box-1 .box-profile .side-box {
     flex-direction: column;
     gap: 20px;
   }
-  .main-container .box-1 .column-two .side-box div img, .main-container .box-1 .column-two .side-box div #dialux-logo {
+  .main-container .box-1 .box-profile .side-box div img, .main-container .box-1 .box-profile .side-box div #dialux-logo {
     width: 30px;
     height: 30px;
   }
-  .main-container .box-1 .column-two .side-box div .logo-small {
+  .main-container .box-1 .box-profile .side-box div .logo-small {
     width: 60px;
   }
-  .column-one {
+  .box-text {
     width: 40%;
     font-size: 0.9rem;
   }
