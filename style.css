@@ -62,6 +62,7 @@ body {
   margin-top: 20px;
 }
 .column-one #cv-button {
+  margin-top: 40px;
   width: 150px;
   text-align: center;
   background-color: #d29447;
@@ -123,7 +124,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   gap: 1px;
-  background-color: rgba(213, 206, 206, 0.6039215686);
+  background-color: rgba(255, 255, 255, 0.3607843137);
   border-radius: 5px;
   padding: 10px;
 }
@@ -143,7 +144,7 @@ body {
 }
 
 .projects-section {
-  background-color: rgba(201, 200, 198, 0.5215686275);
+  background-color: hsla(1, 40%, 53%, 0.347);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -156,8 +157,8 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   padding: 5px;
-  margin-top: 20px;
-  color: #464545;
+  margin-top: 40px;
+  color: #ffffff;
   font-size: 1rem;
 }
 .projects-section .project {
@@ -192,11 +193,19 @@ body {
   }
   body .main-container .column-two {
     width: 40%;
+    min-width: 250px;
     flex-direction: column;
   }
   body .main-container .column-two .side-box {
     flex-direction: column;
     gap: 20px;
+  }
+  body .main-container .column-two .side-box div img, body .main-container .column-two .side-box div #dialux-logo {
+    width: 40px;
+    height: 40px;
+  }
+  body .main-container .column-two .side-box div .logo-small {
+    width: 70px;
   }
   body .projects-section .project img {
     width: 50%;
