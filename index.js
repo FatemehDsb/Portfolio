@@ -1,4 +1,4 @@
-// Get all elements with the 'box' class
+
 const boxes = document.querySelectorAll('.box');
 
 

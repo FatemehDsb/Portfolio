@@ -18,11 +18,13 @@ body{
 .box.show {
   opacity: 1;
   transform: translateY(0);
+
 }
 .primary-header {
-  
-  height: 50px;
+ 
+  height: 40px;
   margin-bottom: 5px;
+  border-radius: 5px;
     .social-links{
       display: flex;
       flex-direction: row;  
@@ -42,6 +44,7 @@ body{
     }
 }
 
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +57,7 @@ body{
 .column-one {
 flex-grow: 2;
 background-color:#459eacd5;
- padding: 20px;
+ padding: 10px 20px;
  border-radius: 5px;
  color: rgb(255, 255, 255);
  font-size: 0.8rem;
@@ -67,12 +70,12 @@ background-color:#459eacd5;
 
  
   #cv-button{
-   margin-top: 40px;
+   margin-top: 20px;
     width: 150px;
     text-align: center;
     background-color: #d29447; 
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 20px;
     color: #fff; 
     text-decoration: none;
     border: none;
@@ -90,7 +93,7 @@ background-color:#459eacd5;
     text-align: center;
     background-color: #b75957; 
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 20px;
     color: #fff; 
     text-decoration: none;
     border: none;

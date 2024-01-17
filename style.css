@@ -21,8 +21,9 @@ body {
 }
 
 .primary-header {
-  height: 50px;
+  height: 40px;
   margin-bottom: 5px;
+  border-radius: 5px;
 }
 .primary-header .social-links {
   display: flex;
@@ -50,7 +51,7 @@ body {
 .column-one {
   flex-grow: 2;
   background-color: rgba(69, 158, 172, 0.8352941176);
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 5px;
   color: rgb(255, 255, 255);
   font-size: 0.8rem;
@@ -61,12 +62,12 @@ body {
   text-align: center;
 }
 .column-one #cv-button {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 150px;
   text-align: center;
   background-color: #d29447;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 20px;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -82,7 +83,7 @@ body {
   text-align: center;
   background-color: #b75957;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 20px;
   color: #fff;
   text-decoration: none;
   border: none;
