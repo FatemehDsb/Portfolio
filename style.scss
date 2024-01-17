@@ -127,13 +127,14 @@ background-color:#459eacd5;
     width: 100%;
     border-radius: 5px;
     background-color:  hsla(1, 40%, 53%, 0.922);
-
+     padding-left: 10px;
+     padding-right: 10px;
     div{
       
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      gap: 4px;
+      gap: 1px;
      background-color: #d5cece9a;
       border-radius: 5px;
       padding: 10px;
