@@ -7,6 +7,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
 body{
   margin-left: 40px;
   margin-right: 40px;
@@ -23,9 +27,10 @@ body{
 
 }
 
-.container{
-  height: 100vh;
- 
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .primary-header {
  
@@ -53,6 +58,7 @@ body{
 
 
 .main-container {
+  flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
