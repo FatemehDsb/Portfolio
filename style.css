@@ -9,6 +9,17 @@ body {
   margin-right: 40px;
 }
 
+.box {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .primary-header {
   height: 50px;
   margin-bottom: 5px;
@@ -115,15 +126,15 @@ body {
   padding: 3px;
 }
 .column-two .side-box .side-box-image {
-  width: 40px;
+  width: 25px;
   transition: transform 0.3s ease-in-out;
 }
 .column-two .side-box .logo-small {
-  width: 70px;
+  width: 60px;
 }
 .column-two .side-box #dialux-logo {
-  width: 20px;
-  height: 30px;
+  width: 15px;
+  height: 20px;
 }
 .column-two .side-box .side-box-image:hover {
   transform: scale(1.1);
