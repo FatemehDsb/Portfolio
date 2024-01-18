@@ -78,13 +78,10 @@ body {
   height: 200px;
   border-radius: 2px;
  background-color:#755cde;
-
-
-  
 }
 
   .main-sidebox{
-    width: 39%;
+    width: calc(100%-60%);
      
     display: flex;
     flex-direction: column;
