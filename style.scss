@@ -24,22 +24,8 @@ body {
 .container {
   width: 100%;
  
-
-  .main-container{
-    width: 100%;
-    height: 100vh;
-    border: 1px solid rgb(231, 11, 11);
-      display: flex;
-      flex-direction: column;
-      
-      justify-content: space-between;
-      gap: 5px;
-   
-   
-
   .primary-header {
-    
-    border: 1px solid black;
+
     width: 100%;
     padding: 5px;
     margin: auto;
@@ -64,39 +50,48 @@ body {
     }
   }
 
- 
+  .main-container{
+    border: 3px solid rgb(34, 183, 61);
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
 
-.box-profile {
+    
+
+.sub-box-1{
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+.box-1{
   display: flex;
   flex-direction:row;
   gap: 5px;
-  flex-grow: 2;
-  border: 1px solid blueviolet;
- 
- 
-  #profile-image {
-    width: 60%;
-    height: auto;
-   border-radius: 5px;
+.box-profile {
+  width: 60%;
+  height: auto;
+  border-radius: 5px;
   background-color: #d29447ef;
-  }
+}
 
   .main-sidebox{
-    background-color: blue;
     width: 39%;
     display: flex;
     flex-direction: column;
+    gap: 5px;
 
     .side-box-2{
-      background-color: red;
+      border-radius: 5px;
+      background-color: rgb(105, 219, 223);
      ul {
-
         list-style: none;
       }
-      
     }
-    
-
+  
   .side-box {
    width: 100%;
     padding: 10px;
@@ -137,6 +132,9 @@ body {
 }
 
 .box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   flex-grow: 2;
   background-color: #459eacd5;
   padding: 10px 20px;
@@ -146,20 +144,19 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   
-  padding-top: 20px;
+  
   
   div {
     text-align: center;
   }
   p{
-    padding-top:30px;
+    
     font-size: 0.9rem;
   }
   .buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 100px;
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -201,7 +198,15 @@ body {
     }
   }
 }
+
 }
+
+.sub-box-2{
+
+  background-color: #b54240;
+  padding:10px 20px;
+}
+
 }
 
 .projects-section {
@@ -240,6 +245,7 @@ body {
     }
   }
 }
+}
 
 @media (min-width: 600px) {
   body {
@@ -247,39 +253,57 @@ body {
     margin-right: 100px;
   }
 
+  .container{
   .main-container {
+
+     .sub-box-1{
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
     
-   
-
     .box-1 {
-      
-      
-      .box-profile {
-        flex-direction: column;
-        border: 1px solid rgb(76, 19, 220);
-        width: auto;
-        .side-box {
-          flex-direction: column;
-          gap: 10px;
-          div {
-            img, #dialux-logo {
-              width: 30px;
-              
-            }
-            
-          }
-        }
-      }
-    }
-    .box-text {
-      background-color: red;
-      font-size: 0.9rem;
-    }
-  }
-  
 
+     width: 40%;
+     flex-direction: column;
+    
+     
+     .box-profile {
+      width: 100%;
+      height: 200px;
+      background-color: #d59b53;
+     }
+       
+     .main-sidebox{
+      width: 100%;
+          flex-direction: row; 
+          .side-box {
+            width: 50%;
+            flex-direction: column;
+            gap: 10px;
+            div {
+              img, #dialux-logo {
+                width: 30px;
+              }
+            }
+          }
+
+          .side-box-2{
+            width: 50%;
+          }
+      }
+
+     }
+    .box-text {
+      font-size: 0.9rem;
+      max-width: 70%;
+    }
+      }
+
+      .sub-box-2{
+  width: 100%;
+  
+       }
+}
+  
   .projects-section {
     .project {
       img {
@@ -288,7 +312,9 @@ body {
       }
     }
   }
+
 }
+
 
 footer {
   height: 50px;
@@ -298,3 +324,6 @@ footer {
   text-align: center;
   padding-top: 30px;
 }
+
+}
+

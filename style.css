@@ -25,60 +25,62 @@ body {
 .container {
   width: 100%;
 }
-.container .main-container {
+.container .primary-header {
   width: 100%;
-  height: 100vh;
-  border: 1px solid rgb(231, 11, 11);
+  padding: 5px;
+  margin: auto;
+}
+.container .primary-header .social-links {
+  display: flex;
+  flex-direction: row;
+}
+.container .primary-header .social-links a img {
+  width: 30px;
+  margin-left: 15px;
+  transition: transform 0.5s ease;
+}
+.container .primary-header .social-links a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.container .main-container {
+  border: 3px solid rgb(34, 183, 61);
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 5px;
 }
-.container .main-container .primary-header {
-  border: 1px solid black;
-  width: 100%;
-  padding: 5px;
-  margin: auto;
-}
-.container .main-container .primary-header .social-links {
+.container .main-container .sub-box-1 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 5px;
 }
-.container .main-container .primary-header .social-links a img {
-  width: 30px;
-  margin-left: 15px;
-  transition: transform 0.5s ease;
-}
-.container .main-container .primary-header .social-links a img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.container .main-container .box-profile {
+.container .main-container .sub-box-1 .box-1 {
   display: flex;
   flex-direction: row;
   gap: 5px;
-  flex-grow: 2;
-  border: 1px solid blueviolet;
 }
-.container .main-container .box-profile #profile-image {
+.container .main-container .sub-box-1 .box-1 .box-profile {
   width: 60%;
   height: auto;
   border-radius: 5px;
   background-color: rgba(210, 148, 71, 0.937254902);
 }
-.container .main-container .box-profile .main-sidebox {
-  background-color: blue;
+.container .main-container .sub-box-1 .box-1 .main-sidebox {
   width: 39%;
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
-.container .main-container .box-profile .main-sidebox .side-box-2 {
-  background-color: red;
+.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box-2 {
+  border-radius: 5px;
+  background-color: rgb(105, 219, 223);
 }
-.container .main-container .box-profile .main-sidebox .side-box-2 ul {
+.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box-2 ul {
   list-style: none;
 }
-.container .main-container .box-profile .main-sidebox .side-box {
+.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box {
   width: 100%;
   padding: 10px;
   display: flex;
@@ -90,7 +92,7 @@ body {
   padding-right: 10px;
   gap: 5px;
 }
-.container .main-container .box-profile .main-sidebox .side-box div {
+.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -99,18 +101,21 @@ body {
   border-radius: 5px;
   padding: 5px;
 }
-.container .main-container .box-profile .main-sidebox .side-box div .side-box-image {
+.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div .side-box-image {
   width: 20px;
   transition: transform 0.3s ease-in-out;
 }
-.container .main-container .box-profile .main-sidebox .side-box div #dialux-logo {
+.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div #dialux-logo {
   width: 15px;
   height: 15px;
 }
-.container .main-container .box-profile .main-sidebox .side-box div .side-box-image:hover {
+.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div .side-box-image:hover {
   transform: scale(1.1);
 }
-.container .main-container .box-text {
+.container .main-container .sub-box-1 .box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   flex-grow: 2;
   background-color: rgba(69, 158, 172, 0.8352941176);
   padding: 10px 20px;
@@ -119,25 +124,22 @@ body {
   font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  padding-top: 20px;
 }
-.container .main-container .box-text div {
+.container .main-container .sub-box-1 .box-text div {
   text-align: center;
 }
-.container .main-container .box-text p {
-  padding-top: 30px;
+.container .main-container .sub-box-1 .box-text p {
   font-size: 0.9rem;
 }
-.container .main-container .box-text .buttons {
+.container .main-container .sub-box-1 .box-text .buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 100px;
   gap: 10px;
   justify-content: center;
   align-items: center;
 }
-.container .main-container .box-text .buttons #cv-button {
+.container .main-container .sub-box-1 .box-text .buttons #cv-button {
   width: 150px;
   height: 40px;
   text-align: center;
@@ -151,10 +153,10 @@ body {
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.container .main-container .box-text .buttons #cv-button:hover {
+.container .main-container .sub-box-1 .box-text .buttons #cv-button:hover {
   background-color: #d18426;
 }
-.container .main-container .box-text .buttons #contact-button {
+.container .main-container .sub-box-1 .box-text .buttons #contact-button {
   height: 40px;
   width: 150px;
   text-align: center;
@@ -168,11 +170,14 @@ body {
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.container .main-container .box-text .buttons #contact-button:hover {
+.container .main-container .sub-box-1 .box-text .buttons #contact-button:hover {
   background-color: #b54240;
 }
-
-.projects-section {
+.container .main-container .sub-box-2 {
+  background-color: #b54240;
+  padding: 10px 20px;
+}
+.container .projects-section {
   background-color: hsla(1, 40%, 53%, 0.347);
   border-radius: 5px;
   display: flex;
@@ -182,7 +187,7 @@ body {
   justify-content: space-around;
   gap: 5px;
 }
-.projects-section h2 {
+.container .projects-section h2 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   padding: 5px;
@@ -190,20 +195,20 @@ body {
   color: #ffffff;
   font-size: 1.4rem;
 }
-.projects-section .project {
+.container .projects-section .project {
   padding: 20px;
 }
-.projects-section .project img {
+.container .projects-section .project img {
   width: 70%;
   border-radius: 5px;
 }
-.projects-section .project .project-image {
+.container .projects-section .project .project-image {
   transition: transform 0.3s ease-in-out;
 }
-.projects-section .project .project-image:hover {
+.container .projects-section .project .project-image:hover {
   transform: scale(1.1);
 }
-.projects-section .project .project-link:hover {
+.container .projects-section .project .project-link:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.399);
 }
 
@@ -212,36 +217,51 @@ body {
     margin-left: 100px;
     margin-right: 100px;
   }
-  .main-container {
+  .container .main-container .sub-box-1 {
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  .main-container .box-1 .box-profile {
+  .container .main-container .sub-box-1 .box-1 {
+    width: 40%;
     flex-direction: column;
-    border: 1px solid rgb(76, 19, 220);
-    width: auto;
   }
-  .main-container .box-1 .box-profile .side-box {
+  .container .main-container .sub-box-1 .box-1 .box-profile {
+    width: 100%;
+    height: 200px;
+    background-color: #d59b53;
+  }
+  .container .main-container .sub-box-1 .box-1 .main-sidebox {
+    width: 100%;
+    flex-direction: row;
+  }
+  .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box {
+    width: 50%;
     flex-direction: column;
     gap: 10px;
   }
-  .main-container .box-1 .box-profile .side-box div img, .main-container .box-1 .box-profile .side-box div #dialux-logo {
+  .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div img, .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div #dialux-logo {
     width: 30px;
   }
-  .main-container .box-text {
-    background-color: red;
-    font-size: 0.9rem;
+  .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box-2 {
+    width: 50%;
   }
-  .projects-section .project img {
+  .container .main-container .sub-box-1 .box-text {
+    font-size: 0.9rem;
+    max-width: 70%;
+  }
+  .container .main-container .sub-box-2 {
+    width: 100%;
+  }
+  .container .projects-section .project img {
     width: 50%;
     border: 1px solid rgb(255, 255, 255);
   }
-}
-footer {
-  height: 50px;
-  background-color: #464545;
-  font-size: 0.5rem;
-  color: #fff;
-  text-align: center;
-  padding-top: 30px;
+  footer {
+    height: 50px;
+    background-color: #464545;
+    font-size: 0.5rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
