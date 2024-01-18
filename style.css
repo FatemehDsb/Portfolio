@@ -61,16 +61,11 @@ body {
   border: 1px solid blueviolet;
 }
 .container .main-container .box-profile #profile-image {
+  width: 50%;
   border-radius: 5px;
   background-color: rgba(210, 148, 71, 0.937254902);
 }
-.container .main-container .box-profile #profile-image img {
-  width: 100%;
-  max-width: 300px;
-  border: 1px solid rgb(107, 198, 17);
-}
 .container .main-container .box-profile .side-box {
-  flex-shrink: 1;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -106,7 +101,6 @@ body {
 }
 .container .main-container .box-text {
   flex-grow: 2;
-  height: auto;
   background-color: rgba(69, 158, 172, 0.8352941176);
   padding: 10px 20px;
   border-radius: 5px;
@@ -114,7 +108,6 @@ body {
   font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  height: auto;
   padding-top: 20px;
 }
 .container .main-container .box-text div {
@@ -212,6 +205,8 @@ body {
   }
   .main-container {
     flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
   }
   .main-container .box-1 .box-profile {
     flex-direction: column;
@@ -227,8 +222,7 @@ body {
   .main-container .box-1 .box-profile .side-box div .logo-small {
     width: 60px;
   }
-  .box-text {
-    width: 50%;
+  .main-container .box-text {
     font-size: 0.9rem;
   }
   .projects-section .project img {
