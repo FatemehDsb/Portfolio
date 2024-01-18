@@ -102,31 +102,67 @@ body {
   gap: 5px;
 }
 .container .main-container .sub-box-1 .box-1 .box-profile {
-  width: 60%;
-  height: auto;
+  width: 70%;
+  max-width: 300px;
+  min-width: none;
+  height: 200px;
   border-radius: 2px;
   background-color: #755cde;
+}
+.container .main-container .sub-box-1 .box-1 .box-profile img {
+  width: 200px;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox {
   width: 39%;
   display: flex;
   flex-direction: column;
   gap: 5px;
-}
-.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box-2 {
-  border-radius: 2px;
-  background-color: #f39d9e;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.6rem;
-  text-align: center;
-  padding: 5px;
-}
-.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box-2 ul {
-  list-style: none;
+  /*.side-box-2{
+      width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 2px;
+    background-color: #f39d9e;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 7px;
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 4px;
+      background-color: #ffffff5c;
+      border-radius: 2px;
+      padding: 5px;
+
+    }
+      border-radius: 2px;
+      background-color:#f39d9e ;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.6rem; 
+      text-align: center;
+      padding: 5px;
+      .side-box-image {
+        width: 30px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #dialux-logo {
+        width: 15px;
+        height: 15px;
+      }
+
+      .side-box-image:hover {
+        transform: scale(1.1);
+      }
+    }
+  */
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box {
   width: 100%;
-  padding: 10px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -134,7 +170,11 @@ body {
   background-color: #f39d9e;
   padding-left: 10px;
   padding-right: 10px;
-  gap: 7px;
+  gap: 10px;
+}
+.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box .side-box-image {
+  width: 30px;
+  transition: transform 0.3s ease-in-out;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div {
   display: flex;
@@ -145,17 +185,6 @@ body {
   border-radius: 2px;
   padding: 5px;
 }
-.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div .side-box-image {
-  width: 20px;
-  transition: transform 0.3s ease-in-out;
-}
-.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div #dialux-logo {
-  width: 15px;
-  height: 15px;
-}
-.container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div .side-box-image:hover {
-  transform: scale(1.1);
-}
 .container .main-container .sub-box-1 .box-text {
   display: flex;
   flex-direction: column;
@@ -164,13 +193,17 @@ body {
   background-color: #63c4b4;
   padding: 10px 20px;
   border-radius: 2px;
-  color: #ffffff;
+  color: #000000;
   font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
 .container .main-container .sub-box-1 .box-text div {
   text-align: center;
+}
+.container .main-container .sub-box-1 .box-text i {
+  font-size: 0.8rem;
+  color: #464545;
 }
 .container .main-container .sub-box-1 .box-text p {
   font-size: 0.9rem;
@@ -187,7 +220,7 @@ body {
   width: 150px;
   height: 40px;
   text-align: center;
-  background-color: #d29447;
+  background-color: #f39d9e;
   display: inline-block;
   padding: 8px 20px;
   color: #fff;
@@ -198,13 +231,14 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .container .main-container .sub-box-1 .box-text .buttons #cv-button:hover {
-  background-color: #d18426;
+  background-color: #f55356;
+  transform: scale(1.1);
 }
 .container .main-container .sub-box-1 .box-text .buttons #contact-button {
   height: 40px;
   width: 150px;
   text-align: center;
-  background-color: #b75957;
+  background-color: #755cde;
   display: inline-block;
   padding: 8px 20px;
   color: #fff;
@@ -215,7 +249,8 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .container .main-container .sub-box-1 .box-text .buttons #contact-button:hover {
-  background-color: #b54240;
+  background-color: #4625ce;
+  transform: scale(1.1);
 }
 .container .projects-section {
   background-color: #948e8e;
@@ -281,7 +316,6 @@ body {
   .container .main-container .sub-box-1 .box-1 .main-sidebox {
     width: 100%;
     flex-direction: row;
-    border: 1px solid black;
   }
   .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box {
     min-width: 50%;
