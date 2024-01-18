@@ -100,7 +100,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 5px;
-  height: 180px;
 }
 .container .main-container .sub-box-1 .box-1 .box-profile {
   width: 59%;
@@ -156,7 +155,6 @@ body {
   */
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box {
-  height: 100%;
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
