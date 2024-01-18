@@ -2,6 +2,8 @@
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -20,48 +22,56 @@ body {
   transform: translateY(0);
 }
 
-.primary-header {
-  height: 50px;
+.container {
+  width: 100%;
 }
-.primary-header .social-links {
+.container .main-container {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid rgb(231, 11, 11);
   display: flex;
   flex-direction: row;
-  padding-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
 }
-.primary-header .social-links a img {
+.container .main-container .primary-header {
+  border: 1px solid black;
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+}
+.container .main-container .primary-header .social-links {
+  display: flex;
+  flex-direction: row;
+}
+.container .main-container .primary-header .social-links a img {
   width: 30px;
   margin-left: 15px;
   transition: transform 0.5s ease;
 }
-.primary-header .social-links a img:hover {
+.container .main-container .primary-header .social-links a img:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-  height: 100vh;
-}
-.container .main-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 5px;
 }
 .container .main-container .box-profile {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  flex-grow: 2;
+  border: 1px solid blueviolet;
 }
 .container .main-container .box-profile #profile-image {
-  flex-grow: 2;
   border-radius: 5px;
   background-color: rgba(210, 148, 71, 0.937254902);
 }
 .container .main-container .box-profile #profile-image img {
-  width: 140%;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid rgb(107, 198, 17);
 }
 .container .main-container .box-profile .side-box {
-  width: 100%;
+  flex-shrink: 1;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -70,12 +80,13 @@ body {
   background-color: hsla(1, 40%, 53%, 0.922);
   padding-left: 10px;
   padding-right: 10px;
+  gap: 5px;
 }
 .container .main-container .box-profile .side-box div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 1px;
+  gap: 4px;
   background-color: rgba(255, 255, 255, 0.3607843137);
   border-radius: 5px;
   padding: 5px;
@@ -96,6 +107,7 @@ body {
 }
 .container .main-container .box-text {
   flex-grow: 2;
+  height: auto;
   background-color: rgba(69, 158, 172, 0.8352941176);
   padding: 10px 20px;
   border-radius: 5px;
@@ -103,6 +115,7 @@ body {
   font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  height: auto;
 }
 .container .main-container .box-text div {
   text-align: center;
@@ -114,7 +127,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-bottom: 30px;
+  border: 1px solid red;
+  margin-top: 40px;
+  width: 80%;
+  padding: auto;
+  margin: auto;
+  margin-top: 30px;
 }
 .container .main-container .box-text .buttons #cv-button {
   width: 150px;
@@ -186,25 +204,20 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.399);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 600px) {
   body {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   .main-container {
     flex-direction: row;
-    border: 1px solid rgb(205, 18, 18);
-  }
-  .main-container .box-1 {
-    width: 10%;
-    min-width: 350px;
   }
   .main-container .box-1 .box-profile {
     flex-direction: column;
   }
   .main-container .box-1 .box-profile .side-box {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
   .main-container .box-1 .box-profile .side-box div img, .main-container .box-1 .box-profile .side-box div #dialux-logo {
     width: 30px;
