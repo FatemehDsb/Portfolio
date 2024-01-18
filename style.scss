@@ -166,15 +166,18 @@ body {
   gap: 10px;
   flex-grow: 2;
   background-color:#63c4b4 ;
-  padding: 20px 20px;
+  padding: 20px 40px;
   border-radius: 2px;
   color:#000000;
  
   font-family: 'Montserrat', sans-serif;
   
+  h1{
+    font-size: 1.7rem;
+  }
   .job-title{
     color: #464545;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 30px;
   }
   
