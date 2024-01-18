@@ -15,19 +15,14 @@ document.addEventListener('DOMContentLoaded', showBoxes);
 
 
 const allCourses = [
-   { name: "Introduction to HTML", studied: true },
-   { name: "Introduction to CSS", studied: true },
-   { name: "Introduction to JavaScript", studied: true },
-   { name: "HTML Basics", studied: false },
-   { name: "HTML5 and Beyond", studied: false },
-   { name: "CSS Fundamentals", studied: true },
-   { name: "Responsive Web Design", studied: true },
-   { name: "GitHub Basics", studied: false },
-   { name: "Bootstrap Essentials", studied: false },
-   { name: "Figma for Designers", studied: false },
-   { name: "AutoCAD Basics", studied: false },
-   { name: "Photoshop Fundamentals", studied: true },
-   { name: "DIALux Lighting Design", studied: false }
+   { name: "HTML, CSS och Tillgänglighet", studied: true },
+   { name: "JavaScript 1", studied: true },
+   { name: "UX och UI", studied: true },
+   { name: "Frontend-projekt och Agila metoder", studied: false },
+   { name: "JavaScript 2", studied: false },
+   { name: "Interaktion med CMS", studied: true },
+   { name: "Affärsmannaskap", studied: true },
+   { name: "Examensarbete", studied: false },
  ];
 
  function createCourseList() {

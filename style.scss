@@ -75,7 +75,8 @@ body {
   width: 60%;
   height: auto;
   border-radius: 5px;
-  background-color: #d29447ef;
+  border: 1px solid black;
+  
 }
 
   .main-sidebox{
@@ -87,8 +88,12 @@ body {
 
     .side-box-2{
       border-radius: 5px;
-      background-color: rgb(105, 219, 223);
-     ul {
+      border: 1px solid black;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.6rem; 
+      text-align: center;
+      padding: 5px;
+      ul {
         list-style: none;
       }
     }
@@ -100,7 +105,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     border-radius: 5px;
-    background-color: hsla(1, 40%, 53%, 0.922);
+    border: 1px solid black;
     padding-left: 10px;
     padding-right: 10px;
     gap: 5px;
@@ -137,10 +142,10 @@ body {
   flex-direction: column;
   gap: 10px;
   flex-grow: 2;
-  background-color: #459eacd5;
+  border: 1px solid black;
   padding: 10px 20px;
   border-radius: 5px;
-  color: rgb(255, 255, 255);
+  color: rgb(23, 23, 23);
   font-size: 0.9rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -204,23 +209,37 @@ body {
 
 .sub-box-2{
 
-  background-color: #b54240;
-  padding:10px 20px;
+ 
+ 
   display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
       flex-direction: column;
       width: 100%;
        min-width: 400px;
        text-align: center;
-       color: #fff;
-
+       color: #000000;
+       gap: 5px;
+     
+       
        #leftColumn{
+        width: 100%;
+        border: 1px solid black;
         list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
    
 
   }
   #rightColumn{
+    width: 100%;
     list-style: none;
+    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
 
   }
@@ -239,7 +258,7 @@ body {
     font-size: 1.4rem;
   }
  
-  background-color: hsla(1, 40%, 53%, 0.347);
+ border: 1px solid black;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -283,7 +302,8 @@ body {
 
      width: 40%;
      flex-direction: column;
-     min-width: 300px;
+     min-width: 200px;
+    
     
      
      .box-profile {
@@ -295,8 +315,10 @@ body {
      .main-sidebox{
       width: 100%;
           flex-direction: row; 
+          border: 1px solid black;
           .side-box {
-            width: 50%;
+            min-width: 50%;
+           
             flex-direction: column;
             gap: 10px;
             div {
@@ -314,8 +336,8 @@ body {
      }
     .box-text {
       font-size: 0.9rem;
-      max-width: 70%;
-      min-width: 400px;
+     
+      min-width: 200px;
     }
       }
 
@@ -323,7 +345,7 @@ body {
        
         width: 100%;
        min-width: 400px;
-
+flex-direction: row;
      
   
        }

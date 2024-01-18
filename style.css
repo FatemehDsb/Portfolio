@@ -64,7 +64,7 @@ body {
   width: 60%;
   height: auto;
   border-radius: 5px;
-  background-color: rgba(210, 148, 71, 0.937254902);
+  border: 1px solid black;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox {
   width: 39%;
@@ -74,7 +74,11 @@ body {
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box-2 {
   border-radius: 5px;
-  background-color: rgb(105, 219, 223);
+  border: 1px solid black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.6rem;
+  text-align: center;
+  padding: 5px;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box-2 ul {
   list-style: none;
@@ -86,7 +90,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   border-radius: 5px;
-  background-color: hsla(1, 40%, 53%, 0.922);
+  border: 1px solid black;
   padding-left: 10px;
   padding-right: 10px;
   gap: 5px;
@@ -116,10 +120,10 @@ body {
   flex-direction: column;
   gap: 10px;
   flex-grow: 2;
-  background-color: rgba(69, 158, 172, 0.8352941176);
+  border: 1px solid black;
   padding: 10px 20px;
   border-radius: 5px;
-  color: rgb(255, 255, 255);
+  color: rgb(23, 23, 23);
   font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -173,24 +177,35 @@ body {
   background-color: #b54240;
 }
 .container .main-container .sub-box-2 {
-  background-color: #b54240;
-  padding: 10px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   width: 100%;
   min-width: 400px;
   text-align: center;
-  color: #fff;
+  color: #000000;
+  gap: 5px;
 }
 .container .main-container .sub-box-2 #leftColumn {
+  width: 100%;
+  border: 1px solid black;
   list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .container .main-container .sub-box-2 #rightColumn {
+  width: 100%;
   list-style: none;
+  border: 1px solid black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .container .projects-section {
-  background-color: hsla(1, 40%, 53%, 0.347);
+  border: 1px solid black;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -236,7 +251,7 @@ body {
   .container .main-container .sub-box-1 .box-1 {
     width: 40%;
     flex-direction: column;
-    min-width: 300px;
+    min-width: 200px;
   }
   .container .main-container .sub-box-1 .box-1 .box-profile {
     width: 100%;
@@ -246,9 +261,10 @@ body {
   .container .main-container .sub-box-1 .box-1 .main-sidebox {
     width: 100%;
     flex-direction: row;
+    border: 1px solid black;
   }
   .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box {
-    width: 50%;
+    min-width: 50%;
     flex-direction: column;
     gap: 10px;
   }
@@ -260,12 +276,12 @@ body {
   }
   .container .main-container .sub-box-1 .box-text {
     font-size: 0.9rem;
-    max-width: 70%;
-    min-width: 400px;
+    min-width: 200px;
   }
   .container .main-container .sub-box-2 {
     width: 100%;
     min-width: 400px;
+    flex-direction: row;
   }
   .container .projects-section .project img {
     width: 50%;
