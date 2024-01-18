@@ -30,8 +30,7 @@ body {
   height: 100vh;
   border: 1px solid rgb(231, 11, 11);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   gap: 5px;
 }
@@ -116,11 +115,13 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   height: auto;
+  padding-top: 20px;
 }
 .container .main-container .box-text div {
   text-align: center;
 }
 .container .main-container .box-text p {
+  padding-top: 10px;
   font-size: 0.9rem;
 }
 .container .main-container .box-text .buttons {
