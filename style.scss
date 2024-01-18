@@ -70,7 +70,7 @@ body {
 .box-1{
   display: flex;
   flex-direction:row;
-  gap: 7px;
+  gap: 5px;
 .box-profile {
   width: 60%;
   height: auto;
@@ -88,7 +88,7 @@ body {
 
     .side-box-2{
       border-radius: 2px;
-      background-color:#ea7564 ;
+      background-color:#f39d9e ;
       font-family: 'Montserrat', sans-serif;
       font-size: 0.6rem; 
       text-align: center;
@@ -207,35 +207,35 @@ body {
 
 }
 
+/*
 .sub-box-2{
 
- 
- 
-  display: flex;
-        justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
       flex-direction: column;
       width: 100%;
        min-width: 400px;
        text-align: center;
        color: #ffffff;
        gap: 5px;
+       
      
        
        #leftColumn{
         width: 100%;
-       background-color: #a1a1a1;
+       background-color: #252323;
         list-style: none;
         font-family: 'Montserrat', sans-serif;
         font-size: 0.8rem;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
    
 
   }
   #rightColumn{
-    width: 100%;
+   
     list-style: none;
-    background-color: #a1a1a1;
+    background-color: #252323;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     padding-top: 10px;
@@ -247,6 +247,8 @@ body {
 
 }
 
+*/
+  }
 .projects-section {
   
   h2 {
@@ -258,7 +260,7 @@ body {
     font-size: 1.4rem;
   }
  
- border: 1px solid black;
+  background-color: #948e8e;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
