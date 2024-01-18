@@ -76,7 +76,7 @@ body {
 .box-profile {
   width: 59%;
   border-radius: 2px;
- background-color:#E91E63;
+ background-color:#e53872;
 }
 
   .main-sidebox{
@@ -134,17 +134,18 @@ body {
       width: 30px;
       transition: transform 0.3s ease-in-out;
     }
+    height: 100%;
    width: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 2px;
-    background-color: #f39d9e;
+    background-color: #948e8e5c;
     padding-left: 10px;
     padding-right: 10px;
-    gap: 10px;
+    gap: 20px;
     div {
       display: flex;
       flex-direction: row;
@@ -221,7 +222,7 @@ body {
       height: 40px;
       width: 150px;
       text-align: center;
-      background-color: #E91E63;
+      background-color: #da628a;
       display: inline-block;
       padding: 8px 20px;
       color: #fff;
@@ -289,11 +290,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding: 5px;
     margin-top: 40px;
-    color: #000000;
+    color: #ffffff;
     font-size: 1.4rem;
   }
  
-  background-color: #cac2c2;
+  background-color: #e53872;
   border-radius: 5px;
   display: flex;
   flex-direction: column;

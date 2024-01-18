@@ -104,7 +104,7 @@ body {
 .container .main-container .sub-box-1 .box-1 .box-profile {
   width: 59%;
   border-radius: 2px;
-  background-color: #E91E63;
+  background-color: #e53872;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox {
   width: 40%;
@@ -155,17 +155,18 @@ body {
   */
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box {
+  height: 100%;
   width: 100%;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   border-radius: 2px;
-  background-color: #f39d9e;
+  background-color: rgba(148, 142, 142, 0.3607843137);
   padding-left: 10px;
   padding-right: 10px;
-  gap: 10px;
+  gap: 20px;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box .side-box-image {
   width: 30px;
@@ -233,7 +234,7 @@ body {
   height: 40px;
   width: 150px;
   text-align: center;
-  background-color: #E91E63;
+  background-color: #da628a;
   display: inline-block;
   padding: 8px 20px;
   color: #fff;
@@ -248,7 +249,7 @@ body {
   transform: scale(1.1);
 }
 .container .projects-section {
-  background-color: #cac2c2;
+  background-color: #e53872;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -262,7 +263,7 @@ body {
   font-family: "Montserrat", sans-serif;
   padding: 5px;
   margin-top: 40px;
-  color: #000000;
+  color: #ffffff;
   font-size: 1.4rem;
 }
 .container .projects-section .project {
