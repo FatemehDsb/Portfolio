@@ -102,15 +102,11 @@ body {
   gap: 5px;
 }
 .container .main-container .sub-box-1 .box-1 .box-profile {
-  width: 70%;
-  max-width: 300px;
+  width: 60%;
   min-width: none;
   height: 200px;
   border-radius: 2px;
   background-color: #755cde;
-}
-.container .main-container .sub-box-1 .box-1 .box-profile img {
-  width: 200px;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox {
   width: 39%;
@@ -194,19 +190,15 @@ body {
   padding: 10px 20px;
   border-radius: 2px;
   color: #000000;
-  font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
 }
-.container .main-container .sub-box-1 .box-text div {
-  text-align: center;
-}
-.container .main-container .sub-box-1 .box-text i {
-  font-size: 0.8rem;
+.container .main-container .sub-box-1 .box-text .job-title {
   color: #464545;
-}
-.container .main-container .sub-box-1 .box-text p {
   font-size: 0.9rem;
+}
+.container .main-container .sub-box-1 .box-text .text {
+  font-size: 0.9rem;
+  font-weight: 400px;
 }
 .container .main-container .sub-box-1 .box-text .buttons {
   display: flex;
@@ -297,8 +289,8 @@ body {
 
 @media (min-width: 600px) {
   body {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
   .container .main-container .sub-box-1 {
     flex-direction: row;
@@ -329,8 +321,11 @@ body {
     width: 50%;
   }
   .container .main-container .sub-box-1 .box-text {
-    font-size: 0.9rem;
     min-width: 200px;
+    max-width: 70%;
+  }
+  .container .main-container .sub-box-1 .box-text .text {
+    margin-bottom: 100px;
   }
   .container .main-container .sub-box-2 {
     width: 100%;

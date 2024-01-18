@@ -72,16 +72,14 @@ body {
   flex-direction:row;
   gap: 5px;
 .box-profile {
-  width: 70%;
-  max-width: 300px;
+  width: 60%;
+  
   min-width: none;
   height: 200px;
   border-radius: 2px;
  background-color:#755cde;
 
- img{
-  width: 200px;
- }
+
   
 }
 
@@ -174,24 +172,20 @@ body {
   padding: 10px 20px;
   border-radius: 2px;
   color:#000000;
-  font-size: 0.9rem;
+ 
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
   
-  
-  
-  div {
-    text-align: center;
-  }
-  i{
-    font-size: 0.8rem;
+  .job-title{
     color: #464545;
-  }
-  p{
-    
     font-size: 0.9rem;
-     
   }
+  
+  .text{
+   
+    font-size: 0.9rem;
+   font-weight: 400px;
+  }
+
   .buttons {
     display: flex;
     flex-direction: column;
@@ -335,8 +329,8 @@ footer {
 
 @media (min-width: 600px) {
   body {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
 
   .container{
@@ -382,9 +376,14 @@ footer {
 
      }
     .box-text {
-      font-size: 0.9rem;
+   
      
       min-width: 200px;
+      max-width: 70%;
+
+      .text{
+        margin-bottom: 100px;
+      }
     }
       }
 
