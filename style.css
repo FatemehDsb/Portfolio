@@ -104,7 +104,7 @@ body {
 .container .main-container .sub-box-1 .box-1 .box-profile {
   width: 59%;
   border-radius: 2px;
-  background-color: #e53872;
+  background-color: #fecc01;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox {
   width: 40%;
@@ -163,7 +163,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 2px;
-  background-color: rgba(148, 142, 142, 0.3607843137);
+  background-color: #867c7f;
   padding-left: 10px;
   padding-right: 10px;
   gap: 20px;
@@ -186,23 +186,23 @@ body {
   flex-direction: column;
   gap: 10px;
   flex-grow: 2;
-  background-color: rgba(148, 142, 142, 0.3607843137);
+  background-color: #32127a;
   padding: 20px 20px;
   border-radius: 2px;
-  color: #000000;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
 }
 .container .main-container .sub-box-1 .box-text h1 {
   font-size: 1.6rem;
 }
 .container .main-container .sub-box-1 .box-text .job-title {
-  color: #323131;
+  color: #edd488;
   font-size: 0.8rem;
   margin-bottom: 30px;
 }
 .container .main-container .sub-box-1 .box-text .text {
   font-size: 0.8rem;
-  font-weight: 300px;
+  font-weight: 200px;
   margin-bottom: 20px;
 }
 .container .main-container .sub-box-1 .box-text .buttons {
@@ -216,7 +216,7 @@ body {
   width: 150px;
   height: 40px;
   text-align: center;
-  background-color: #f39d9e;
+  background-color: #edbe2f;
   display: inline-block;
   padding: 8px 20px;
   color: #fff;
@@ -227,14 +227,14 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .container .main-container .sub-box-1 .box-text .buttons #cv-button:hover {
-  background-color: #f55356;
+  background-color: #bb8c01;
   transform: scale(1.1);
 }
 .container .main-container .sub-box-1 .box-text .buttons #contact-button {
   height: 40px;
   width: 150px;
   text-align: center;
-  background-color: #da628a;
+  background-color: #878283;
   display: inline-block;
   padding: 8px 20px;
   color: #fff;
@@ -245,11 +245,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .container .main-container .sub-box-1 .box-text .buttons #contact-button:hover {
-  background-color: #4625ce;
+  background-color: #55535f;
   transform: scale(1.1);
 }
 .container .projects-section {
-  background-color: #e53872;
+  background-color: #fecc01;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
