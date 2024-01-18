@@ -36,7 +36,7 @@ body {
 }
 .container .primary-header .social-links a img {
   width: 30px;
-  margin-left: 15px;
+  margin-left: 10px;
   transition: transform 0.5s ease;
 }
 .container .primary-header .social-links a img:hover {
@@ -158,8 +158,8 @@ body {
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box {
   height: 100%;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
