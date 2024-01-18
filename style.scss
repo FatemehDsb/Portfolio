@@ -75,13 +75,30 @@ body {
  
  
   #profile-image {
-    width: 50%;
-      border-radius: 5px;
-      background-color: #d29447ef;
-   
+    width: 60%;
+    height: auto;
+   border-radius: 5px;
+  background-color: #d29447ef;
   }
+
+  .main-sidebox{
+    background-color: blue;
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+
+    .side-box-2{
+      background-color: red;
+     ul {
+
+        list-style: none;
+      }
+      
+    }
+    
+
   .side-box {
-   
+   width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -99,32 +116,33 @@ body {
       background-color: #ffffff5c;
       border-radius: 5px;
       padding: 5px;
+      .side-box-image {
+        width: 20px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #dialux-logo {
+        width: 15px;
+        height: 15px;
+      }
+
+      .side-box-image:hover {
+        transform: scale(1.1);
+      }
+
     }
-    .side-box-image {
-      width: 25px;
-      transition: transform 0.3s ease-in-out;
-    }
-    .logo-small {
-      width: 60px;
-    }
-    #dialux-logo {
-      width: 15px;
-      height: 20px;
-    }
-    .side-box-image:hover {
-      transform: scale(1.1);
-    }
+  
   }
+}
 }
 
 .box-text {
   flex-grow: 2;
-  
   background-color: #459eacd5;
   padding: 10px 20px;
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   
@@ -134,19 +152,18 @@ body {
     text-align: center;
   }
   p{
-    padding-top:10px;
+    padding-top:30px;
     font-size: 0.9rem;
   }
   .buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-   border: 1px solid red;
-    margin-top: 40px;
-    width: 80%;
-    padding: auto;
-    margin: auto;
-    margin-top: 30px;
+    margin-top: 100px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+   
     
     #cv-button {
       width: 150px;
@@ -233,30 +250,31 @@ body {
   .main-container {
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: red;
+    
    
 
     .box-1 {
-     
+      
+      
       .box-profile {
         flex-direction: column;
+        border: 1px solid rgb(76, 19, 220);
+        width: auto;
         .side-box {
           flex-direction: column;
           gap: 10px;
           div {
             img, #dialux-logo {
               width: 30px;
-              height: 30px;
+              
             }
-            .logo-small {
-              width: 60px;
-            }
+            
           }
         }
       }
     }
     .box-text {
-   
+      background-color: red;
       font-size: 0.9rem;
     }
   }
