@@ -105,7 +105,7 @@ body {
 .container .main-container .sub-box-1 .box-1 .box-profile {
   width: 59%;
   border-radius: 2px;
-  background-color: #755cde;
+  background-color: #E91E63;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox {
   width: 40%;
@@ -187,23 +187,23 @@ body {
   flex-direction: column;
   gap: 10px;
   flex-grow: 2;
-  background-color: #c8cce2;
-  padding: 20px 40px;
+  background-color: #cdcacb;
+  padding: 20px 20px;
   border-radius: 2px;
   color: #000000;
   font-family: "Montserrat", sans-serif;
 }
 .container .main-container .sub-box-1 .box-text h1 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 .container .main-container .sub-box-1 .box-text .job-title {
-  color: #464545;
+  color: #323131;
   font-size: 0.8rem;
   margin-bottom: 30px;
 }
 .container .main-container .sub-box-1 .box-text .text {
-  font-size: 0.9rem;
-  font-weight: 400px;
+  font-size: 0.8rem;
+  font-weight: 300px;
   margin-bottom: 20px;
 }
 .container .main-container .sub-box-1 .box-text .buttons {
@@ -235,7 +235,7 @@ body {
   height: 40px;
   width: 150px;
   text-align: center;
-  background-color: #755cde;
+  background-color: #E91E63;
   display: inline-block;
   padding: 8px 20px;
   color: #fff;
