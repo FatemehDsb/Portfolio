@@ -74,7 +74,7 @@ body {
 .box-profile {
   width: 60%;
   
-  min-width: none;
+  
   height: 200px;
   border-radius: 2px;
  background-color:#755cde;
@@ -178,12 +178,14 @@ body {
   .job-title{
     color: #464545;
     font-size: 0.9rem;
+    margin-bottom: 30px;
   }
   
   .text{
    
     font-size: 0.9rem;
    font-weight: 400px;
+   margin-bottom: 30px;
   }
 
   .buttons {
@@ -286,11 +288,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding: 5px;
     margin-top: 40px;
-    color: #ffffff;
+    color: #000000;
     font-size: 1.4rem;
   }
  
-  background-color: #948e8e;
+  background-color: #cac2c2;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
