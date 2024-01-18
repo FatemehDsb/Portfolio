@@ -100,15 +100,15 @@ body {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  height: 180px;
 }
 .container .main-container .sub-box-1 .box-1 .box-profile {
   width: 59%;
-  height: 200px;
   border-radius: 2px;
   background-color: #755cde;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox {
-  width: 39%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -156,8 +156,10 @@ body {
   */
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box {
+  height: 100%;
   width: 100%;
-  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

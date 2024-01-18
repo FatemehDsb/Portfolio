@@ -71,17 +71,16 @@ body {
   display: flex;
   flex-direction:row;
   gap: 5px;
+  height: 180px;
+ 
 .box-profile {
   width: 59%;
-  
-  
-  height: 200px;
   border-radius: 2px;
  background-color:#755cde;
 }
 
   .main-sidebox{
-    width: 39%;
+    width: 40%;
      
     display: flex;
     flex-direction: column;
@@ -130,12 +129,14 @@ body {
     }
   */
   .side-box {
+    height: 100%;
     .side-box-image {
       width: 30px;
       transition: transform 0.3s ease-in-out;
     }
    width: 100%;
-    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
