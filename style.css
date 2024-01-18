@@ -58,13 +58,13 @@ body {
 .container .main-container .sub-box-1 .box-1 {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 7px;
 }
 .container .main-container .sub-box-1 .box-1 .box-profile {
   width: 60%;
   height: auto;
-  border-radius: 5px;
-  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #755cde;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox {
   width: 39%;
@@ -73,8 +73,8 @@ body {
   gap: 5px;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box-2 {
-  border-radius: 5px;
-  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #ea7564;
   font-family: "Montserrat", sans-serif;
   font-size: 0.6rem;
   text-align: center;
@@ -89,11 +89,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-radius: 5px;
-  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #f39d9e;
   padding-left: 10px;
   padding-right: 10px;
-  gap: 5px;
+  gap: 7px;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div {
   display: flex;
@@ -101,7 +101,7 @@ body {
   justify-content: space-around;
   gap: 4px;
   background-color: rgba(255, 255, 255, 0.3607843137);
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 5px;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div .side-box-image {
@@ -120,10 +120,10 @@ body {
   flex-direction: column;
   gap: 10px;
   flex-grow: 2;
-  border: 1px solid black;
+  background-color: #63c4b4;
   padding: 10px 20px;
-  border-radius: 5px;
-  color: rgb(23, 23, 23);
+  border-radius: 2px;
+  color: #ffffff;
   font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -183,12 +183,12 @@ body {
   width: 100%;
   min-width: 400px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   gap: 5px;
 }
 .container .main-container .sub-box-2 #leftColumn {
   width: 100%;
-  border: 1px solid black;
+  background-color: #a1a1a1;
   list-style: none;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
@@ -198,7 +198,7 @@ body {
 .container .main-container .sub-box-2 #rightColumn {
   width: 100%;
   list-style: none;
-  border: 1px solid black;
+  background-color: #a1a1a1;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   padding-top: 10px;
@@ -238,6 +238,14 @@ body {
 .container .projects-section .project .project-link:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.399);
 }
+.container footer {
+  height: 50px;
+  background-color: #464545;
+  font-size: 0.5rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+}
 
 @media (min-width: 600px) {
   body {
@@ -256,7 +264,6 @@ body {
   .container .main-container .sub-box-1 .box-1 .box-profile {
     width: 100%;
     height: 200px;
-    background-color: #d59b53;
   }
   .container .main-container .sub-box-1 .box-1 .main-sidebox {
     width: 100%;
@@ -286,13 +293,5 @@ body {
   .container .projects-section .project img {
     width: 50%;
     border: 1px solid rgb(255, 255, 255);
-  }
-  footer {
-    height: 50px;
-    background-color: #464545;
-    font-size: 0.5rem;
-    color: #fff;
-    text-align: center;
-    padding-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
