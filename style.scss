@@ -44,15 +44,69 @@ body {
 
 .container {
   height: 100vh;
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: space-between;
+    gap: 5px;
+ 
+
+
+
+
+
+.box-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+ 
+  #profile-image {
+   flex-grow: 2;
+    
+    img {
+      width: 140%;
+    }
+    border-radius: 5px;
+    background-color: #d29447ef;
+  }
+  .side-box {
+   width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: hsla(1, 40%, 53%, 0.922);
+    padding-left: 10px;
+    padding-right: 10px;
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 1px;
+      background-color: #ffffff5c;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    .side-box-image {
+      width: 25px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .logo-small {
+      width: 60px;
+    }
+    #dialux-logo {
+      width: 15px;
+      height: 20px;
+    }
+    .side-box-image:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
-.main-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 5px;
-}
 
 .box-text {
   flex-grow: 2;
@@ -112,56 +166,11 @@ body {
     }
   }
 }
-
-.box-profile {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  width: 100%;
-  #profile-image {
-    img {
-      width: 110%;
-    }
-    border-radius: 5px;
-    background-color: #d29447ef;
-  }
-  .side-box {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    border-radius: 5px;
-    background-color: hsla(1, 40%, 53%, 0.922);
-    padding-left: 10px;
-    padding-right: 10px;
-    div {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      gap: 1px;
-      background-color: #ffffff5c;
-      border-radius: 5px;
-      padding: 10px;
-    }
-    .side-box-image {
-      width: 25px;
-      transition: transform 0.3s ease-in-out;
-    }
-    .logo-small {
-      width: 60px;
-    }
-    #dialux-logo {
-      width: 15px;
-      height: 20px;
-    }
-    .side-box-image:hover {
-      transform: scale(1.1);
-    }
-  }
+}
 }
 
 .projects-section {
+  
   h2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -207,10 +216,9 @@ body {
     flex-direction: row;
     border: 1px solid rgb(205, 18, 18);
 
-    min-width: 250px;
     .box-1 {
       width: 10%;
-      min-width: 250px;
+      min-width: 350px;
       .box-profile {
         flex-direction: column;
         .side-box {
@@ -230,7 +238,7 @@ body {
     }
   }
   .box-text {
-    width: 40%;
+    width: 50%;
     font-size: 0.9rem;
   }
 

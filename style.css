@@ -41,16 +41,60 @@ body {
 .container {
   height: 100vh;
 }
-
-.main-container {
+.container .main-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: space-between;
   gap: 5px;
 }
-
-.box-text {
+.container .main-container .box-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.container .main-container .box-profile #profile-image {
+  flex-grow: 2;
+  border-radius: 5px;
+  background-color: rgba(210, 148, 71, 0.937254902);
+}
+.container .main-container .box-profile #profile-image img {
+  width: 140%;
+}
+.container .main-container .box-profile .side-box {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+  background-color: hsla(1, 40%, 53%, 0.922);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container .main-container .box-profile .side-box div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1px;
+  background-color: rgba(255, 255, 255, 0.3607843137);
+  border-radius: 5px;
+  padding: 5px;
+}
+.container .main-container .box-profile .side-box .side-box-image {
+  width: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+.container .main-container .box-profile .side-box .logo-small {
+  width: 60px;
+}
+.container .main-container .box-profile .side-box #dialux-logo {
+  width: 15px;
+  height: 20px;
+}
+.container .main-container .box-profile .side-box .side-box-image:hover {
+  transform: scale(1.1);
+}
+.container .main-container .box-text {
   flex-grow: 2;
   background-color: rgba(69, 158, 172, 0.8352941176);
   padding: 10px 20px;
@@ -60,19 +104,19 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
-.box-text div {
+.container .main-container .box-text div {
   text-align: center;
 }
-.box-text p {
+.container .main-container .box-text p {
   font-size: 0.9rem;
 }
-.box-text .buttons {
+.container .main-container .box-text .buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-bottom: 30px;
 }
-.box-text .buttons #cv-button {
+.container .main-container .box-text .buttons #cv-button {
   width: 150px;
   height: 40px;
   text-align: center;
@@ -86,10 +130,10 @@ body {
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.box-text .buttons #cv-button:hover {
+.container .main-container .box-text .buttons #cv-button:hover {
   background-color: #d18426;
 }
-.box-text .buttons #contact-button {
+.container .main-container .box-text .buttons #contact-button {
   height: 40px;
   width: 150px;
   text-align: center;
@@ -103,56 +147,8 @@ body {
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.box-text .buttons #contact-button:hover {
+.container .main-container .box-text .buttons #contact-button:hover {
   background-color: #b54240;
-}
-
-.box-profile {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  width: 100%;
-}
-.box-profile #profile-image {
-  border-radius: 5px;
-  background-color: rgba(210, 148, 71, 0.937254902);
-}
-.box-profile #profile-image img {
-  width: 110%;
-}
-.box-profile .side-box {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  border-radius: 5px;
-  background-color: hsla(1, 40%, 53%, 0.922);
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.box-profile .side-box div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 1px;
-  background-color: rgba(255, 255, 255, 0.3607843137);
-  border-radius: 5px;
-  padding: 10px;
-}
-.box-profile .side-box .side-box-image {
-  width: 25px;
-  transition: transform 0.3s ease-in-out;
-}
-.box-profile .side-box .logo-small {
-  width: 60px;
-}
-.box-profile .side-box #dialux-logo {
-  width: 15px;
-  height: 20px;
-}
-.box-profile .side-box .side-box-image:hover {
-  transform: scale(1.1);
 }
 
 .projects-section {
@@ -198,11 +194,10 @@ body {
   .main-container {
     flex-direction: row;
     border: 1px solid rgb(205, 18, 18);
-    min-width: 250px;
   }
   .main-container .box-1 {
     width: 10%;
-    min-width: 250px;
+    min-width: 350px;
   }
   .main-container .box-1 .box-profile {
     flex-direction: column;
@@ -219,7 +214,7 @@ body {
     width: 60px;
   }
   .box-text {
-    width: 40%;
+    width: 50%;
     font-size: 0.9rem;
   }
   .projects-section .project img {
