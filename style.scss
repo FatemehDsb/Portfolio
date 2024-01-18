@@ -51,7 +51,7 @@ body {
   }
 
   .main-container{
-    border: 3px solid rgb(34, 183, 61);
+   
     width: 100%;
     
     display: flex;
@@ -80,6 +80,7 @@ body {
 
   .main-sidebox{
     width: 39%;
+    
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -205,6 +206,24 @@ body {
 
   background-color: #b54240;
   padding:10px 20px;
+  display: flex;
+        justify-content: space-around;
+      flex-direction: column;
+      width: 100%;
+       min-width: 400px;
+       text-align: center;
+       color: #fff;
+
+       #leftColumn{
+        list-style: none;
+   
+
+  }
+  #rightColumn{
+    list-style: none;
+    
+
+  }
 }
 
 }
@@ -264,6 +283,7 @@ body {
 
      width: 40%;
      flex-direction: column;
+     min-width: 300px;
     
      
      .box-profile {
@@ -295,11 +315,16 @@ body {
     .box-text {
       font-size: 0.9rem;
       max-width: 70%;
+      min-width: 400px;
     }
       }
 
       .sub-box-2{
-  width: 100%;
+       
+        width: 100%;
+       min-width: 400px;
+
+     
   
        }
 }
