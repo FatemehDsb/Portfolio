@@ -9,12 +9,14 @@ padding: 0;
 body {
   margin-left: 40px;
   margin-right: 40px;
+  background-color: #d1caca;
 }
 
 .box {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s, transform 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .box.show {
   opacity: 1;
@@ -57,7 +59,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 5px;
+    gap: 20px;
 
     
 
@@ -65,18 +67,18 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
 
 .box-1{
   display: flex;
   flex-direction:row;
-  gap: 5px;
+  gap: 20px;
   
  
 .box-profile {
   width: 59%;
   border-radius: 2px;
- background-color:#fecc01;
+ background-color:#ffffff;
 }
 
   .main-sidebox{
@@ -142,7 +144,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 2px;
-    background-color: #867c7f;
+    background-color: rgb(216, 212, 212);
     padding-left: 10px;
     padding-right: 10px;
     gap: 20px;
@@ -167,24 +169,24 @@ body {
   flex-direction: column;
   gap: 10px;
   flex-grow: 2;
-  background-color:#32127a ;
+  background-color: rgb(216, 212, 212);
   padding: 20px 20px;
   border-radius: 2px;
-  color:#ffffff;
+  color:#000000;
   font-family: 'Montserrat', sans-serif;
   
   h1{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .job-title{
-    color: #edd488;
+    color: #000000;
     font-size: 0.8rem;
     margin-bottom: 30px;
   }
   
   .text{
    
-    font-size: 0.8rem;
+    font-size: 0.9rem;
    font-weight: 200px;
    margin-bottom: 20px;
   }
@@ -195,14 +197,16 @@ body {
     justify-content: space-around;
     gap: 10px;
     justify-content: center;
+
    
    
     
     #cv-button {
+      font-size: 0.8rem;
       width: 150px;
       height: 40px;
       text-align: center;
-      background-color: #edbe2f;
+      background-color: rgb(221, 221, 221);
       display: inline-block;
       padding: 8px 20px;
       color: #fff;
@@ -283,6 +287,7 @@ body {
 */
   }
 .projects-section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
   h2 {
     text-align: center;
