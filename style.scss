@@ -26,8 +26,8 @@ body {
 .container {
   width: 100%;
  
+ 
   .primary-header {
-
     width: 100%;
     padding: 10px;
     margin: auto;
@@ -44,7 +44,7 @@ body {
          margin-left: 10px;
           transition: transform 0.5s ease;
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.6);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
           }
         }
@@ -55,11 +55,10 @@ body {
   .main-container{
    
     width: 100%;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 5px;
 
     
 
@@ -67,13 +66,13 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 
 .box-1{
   display: flex;
   flex-direction:row;
-  gap: 20px;
-  
+  gap: 10px;
+ 
  
 .box-profile {
   width: 59%;
@@ -83,7 +82,6 @@ body {
 
   .main-sidebox{
     width: 40%;
-     
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -131,23 +129,19 @@ body {
     }
   */
   .side-box {
-   
     .side-box-image {
-      width: 30px;
+      width: 20px;
       transition: transform 0.3s ease-in-out;
     }
-    height: 100%;
+  
    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+   padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 2px;
     background-color: rgb(216, 212, 212);
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 20px;
+    gap: 5px;
     div {
       display: flex;
       flex-direction: row;
@@ -170,13 +164,13 @@ body {
   gap: 10px;
   flex-grow: 2;
   background-color: rgb(216, 212, 212);
-  padding: 20px 20px;
+  padding: 20px;
   border-radius: 2px;
   color:#000000;
   font-family: 'Montserrat', sans-serif;
   
   h1{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .job-title{
     color: #000000;
@@ -186,7 +180,7 @@ body {
   
   .text{
    
-    font-size: 0.9rem;
+    font-size: 0.7rem;
    font-weight: 200px;
    margin-bottom: 20px;
   }
@@ -202,14 +196,14 @@ body {
    
     
     #cv-button {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       width: 150px;
-      height: 40px;
+      
       text-align: center;
       background-color: rgb(221, 221, 221);
       display: inline-block;
       padding: 8px 20px;
-      color: #fff;
+      color: #000000;
       text-decoration: none;
       border: none;
       border-radius: 5px;
@@ -222,10 +216,10 @@ body {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     #contact-button {
-      height: 40px;
+      
       width: 150px;
       text-align: center;
-      background-color: #878283;
+      background-color: rgb(221, 221, 221);
       display: inline-block;
       padding: 8px 20px;
       color: #fff;

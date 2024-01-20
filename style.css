@@ -42,7 +42,7 @@ body {
   transition: transform 0.5s ease;
 }
 .container .primary-header .social-links a img:hover {
-  transform: scale(1.1);
+  transform: scale(1.6);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .container .main-container {
@@ -50,7 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 5px;
   /*
   .sub-box-2{
 
@@ -96,12 +96,12 @@ body {
 .container .main-container .sub-box-1 {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 .container .main-container .sub-box-1 .box-1 {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
 }
 .container .main-container .sub-box-1 .box-1 .box-profile {
   width: 59%;
@@ -157,21 +157,17 @@ body {
   */
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box {
-  height: 100%;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 2px;
   background-color: rgb(216, 212, 212);
-  padding-left: 10px;
-  padding-right: 10px;
-  gap: 20px;
+  gap: 5px;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box .side-box-image {
-  width: 30px;
+  width: 20px;
   transition: transform 0.3s ease-in-out;
 }
 .container .main-container .sub-box-1 .box-1 .main-sidebox .side-box div {
@@ -189,13 +185,13 @@ body {
   gap: 10px;
   flex-grow: 2;
   background-color: rgb(216, 212, 212);
-  padding: 20px 20px;
+  padding: 20px;
   border-radius: 2px;
   color: #000000;
   font-family: "Montserrat", sans-serif;
 }
 .container .main-container .sub-box-1 .box-text h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .container .main-container .sub-box-1 .box-text .job-title {
   color: #000000;
@@ -203,7 +199,7 @@ body {
   margin-bottom: 30px;
 }
 .container .main-container .sub-box-1 .box-text .text {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 200px;
   margin-bottom: 20px;
 }
@@ -215,14 +211,13 @@ body {
   justify-content: center;
 }
 .container .main-container .sub-box-1 .box-text .buttons #cv-button {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   width: 150px;
-  height: 40px;
   text-align: center;
   background-color: rgb(221, 221, 221);
   display: inline-block;
   padding: 8px 20px;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   border: none;
   border-radius: 5px;
@@ -234,10 +229,9 @@ body {
   transform: scale(1.1);
 }
 .container .main-container .sub-box-1 .box-text .buttons #contact-button {
-  height: 40px;
   width: 150px;
   text-align: center;
-  background-color: #878283;
+  background-color: rgb(221, 221, 221);
   display: inline-block;
   padding: 8px 20px;
   color: #fff;
