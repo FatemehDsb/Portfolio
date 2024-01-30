@@ -47,7 +47,7 @@ body {
 
 #profile-image {
   margin-top: 20px;
-  width: 200px;
+  width: 220px;
   max-width: 600px;
   border-radius: 3000px;
 }
@@ -61,12 +61,12 @@ body {
   text-align: left;
 }
 .box-text .job-title {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #414040;
   text-align: left;
 }
 .box-text .text {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #333;
   margin: 20px 0;
   text-align: left;
@@ -99,9 +99,6 @@ body {
   margin-top: 10px;
 }
 
-.projects-section {
-  margin-top: 40px;
-}
 .projects-section h2 {
   font-size: 1.8rem;
   color: #333;
