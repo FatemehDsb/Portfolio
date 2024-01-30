@@ -43,16 +43,9 @@ body {
 .main-container {
   display: block;
   text-align: center;
+  margin-top: 40px;
 }
 
-/*.box-profile {
-  width: 80%;
-  max-width: 300px;
-  margin: 20px auto;
-  border-radius: 5px;
-  background-color: purple;
-}
-*/
 #profile-image {
   margin-top: 20px;
   width: 200px;
