@@ -7,17 +7,18 @@
   
   body {
     
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     padding: 0 15px;
    
-    margin-right:50px ;
-    margin-left:50px ;
+   
+    margin: auto 40px;
   }
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
     height: 100vh;
+   
   
   
     
@@ -52,26 +53,39 @@
     
     display: block;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
    
   }
   
  
-  
-  #profile-image{
-    margin-top: 20px;
-    width: 220px;
-    max-width: 600px;
-    border-radius: 3000px;
-    
+  .box-1{
+   
+
+    #profile-image{
+     
+      width: 170px;
+      max-width: 600px;
+      border-radius: 3000px;
+      
+    }
   }
   .box-text {
-    margin-top: 20px;
+    margin-top: 10px;
+    
+    
+    .skills-img{
+      width: 60%;
+      max-width: 300px;
+      
+    
+    }
    
     h1 {
       font-size: 2rem;
       color: #333;
       text-align: left;
+      
+      
     }
   
     .job-title {
@@ -84,20 +98,22 @@
     .text {
       font-size: 1.4rem;
       color: #333;
-      margin: 20px 0;
+     
       text-align: left;
      
     }
+    
   
     .buttons {
         
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-top: 30px;
-      width: 150px;
+  
+      margin-top: 20px;
+      width: 110px;
   
       a {
+        font-size: 0.7rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
         padding: 10px 20px;
         text-decoration: none;
@@ -126,6 +142,7 @@
   
   .projects-section {
     
+    margin-top: 20px;
    
     h2 {
       
@@ -169,28 +186,32 @@
   
   @media (min-width: 768px) {
     body{
-      margin-right: 300px;
-      margin-left: 300px;
+      margin-right: 200px;
+      margin-left: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 
     }
     .container{
       height: 100vh;
+    
     }
     .main-container {
    
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      margin-top: 50px;
+     
+      padding: auto 4px;
+      
      
 
       
       .box-1{
         
+        margin-top: 2px;
         
         #profile-image{
-          width: 60%;
+          width: 40%;
         }
       }
        
@@ -201,8 +222,7 @@
         width: 65%;
         text-align: left;
         .job-title{
-          font-size: 1rem;
-          
+          font-size: 0.9rem;
           margin-top: 10px;
         }
       }
