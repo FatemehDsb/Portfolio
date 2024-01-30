@@ -17,7 +17,8 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    height: 100vh;
+  
+  
     
   }
   
@@ -50,7 +51,7 @@
     
     display: block;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
    
   }
   
@@ -64,7 +65,7 @@
     
   }
   .box-text {
-    margin-top: 30px;
+    margin-top: 20px;
    
     h1 {
       font-size: 2rem;
@@ -97,6 +98,7 @@
       width: 150px;
   
       a {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
         padding: 10px 20px;
         text-decoration: none;
         background-color: #3c74e3;
@@ -110,19 +112,33 @@
       }
     }
   }
+
+  #divider{
+    height: 1px;
+    width: 50%;
+    background-color: gray;
+    
+    margin: auto;
+    margin-top: 10px;
+   
+    
+  }
   
   .projects-section {
+    margin-top: 40px;
    
     h2 {
+      
       font-size: 1.8rem;
       color: #333;
       text-align: center;
+     
       
     }
   
     .project {
       img {
-        margin-top: 30px;
+        margin-top: 40px;
         width: 100%;
         max-width: 100%;
         height: auto;
