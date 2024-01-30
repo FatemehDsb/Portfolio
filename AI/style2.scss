@@ -9,7 +9,6 @@
     
     background-color: #f4f4f4;
     padding: 0 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
    
     margin-right:50px ;
     margin-left:50px ;
@@ -65,7 +64,7 @@
     
   }
   .box-text {
-    
+    margin-top: 30px;
    
     h1 {
       font-size: 2rem;
@@ -156,6 +155,8 @@
     body{
       margin-right: 300px;
       margin-left: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+
     }
     .container{
       height: 100vh;
