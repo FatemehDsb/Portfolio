@@ -101,7 +101,7 @@ body {
 }
 
 .projects-section {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .projects-section h2 {
   font-size: 1.8rem;
@@ -139,7 +139,6 @@ footer {
   body {
     margin-right: 200px;
     margin-left: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
   }
   .container {
     height: 100vh;
