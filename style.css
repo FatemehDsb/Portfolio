@@ -269,6 +269,9 @@ body {
   width: 70%;
   border-radius: 5px;
 }
+/* .project-image_productivity{
+  border: 2px solid red;
+} */
 .container .projects-section .project .project-image {
   transition: transform 0.3s ease-in-out;
 }
