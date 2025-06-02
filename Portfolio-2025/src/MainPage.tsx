@@ -4,17 +4,22 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import ProfileIntro from "./components/ProfileIntro";
 import ResumeButton from "./components/ResumeButton";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
 function MainPage() {
   return (
     <>
-      <h1>MainPage</h1>
-      <Header />
-      <ProfileIntro />
-      <Skills />
-      <ResumeButton />
-      <Projects />
-      <Footer />
+      <Container>
+        <Typography variant="h1">MainPage</Typography>
+
+        <Header />
+        <ProfileIntro />
+        <Skills />
+        <ResumeButton />
+        <Projects />
+        <Footer />
+      </Container>
     </>
   );
 }

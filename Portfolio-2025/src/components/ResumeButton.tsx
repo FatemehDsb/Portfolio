@@ -1,15 +1,18 @@
+import { Button } from "@mui/material";
+
 function ResumeButton() {
   return (
     <>
-      <div className="buttons">
-        <a
-          href="/pdf/CV-Fatemeh Dastgheib-Front-end-Nackadmin-LIA.pdf"
-          className="button"
-          id="cv-button"
-        >
-          My Resume
-        </a>
-      </div>
+      <Button
+        size="large"
+        variant="contained"
+        color="primary"
+        href="/pdf/CV-Fatemeh Dastgheib-Front-end-Nackadmin-LIA.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </Button>
     </>
   );
 }

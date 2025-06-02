@@ -1,21 +1,31 @@
+import { Box, Container, IconButton } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function Header() {
   return (
     <>
-      <div className="container">
-        <header className="primary-header">
-          <div className="social-links">
-            <a href="https://github.com/FatemehDsb" aria-label="github">
-              <img src="/images/github.svg" alt="" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/fatemeh-dastgheib-812798157/"
-              aria-label="linkedin"
-            >
-              <img src="/images/linkedin.svg" />
-            </a>
-          </div>
-        </header>
-      </div>
+      <Box>
+        <Container>
+          <IconButton
+            component="a"
+            href="https://github.com/FatemehDsb"
+            target="_blank"
+            aria-label="GitHub"
+            rel="noopener noreferrer"
+          >
+            <GitHubIcon />
+          </IconButton>
+
+          <IconButton
+            component="a"
+            href="https://www.linkedin.com/in/fatemeh-dastgheib-812798157/"
+            target="_blank"
+            aria-label="Linkedin"
+          >
+            <LinkedInIcon />
+          </IconButton>
+        </Container>
+      </Box>
     </>
   );
 }
