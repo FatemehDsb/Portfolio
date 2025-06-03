@@ -5,14 +5,11 @@ import Footer from "./components/Footer";
 import ProfileIntro from "./components/ProfileIntro";
 import ResumeButton from "./components/ResumeButton";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 
 function MainPage() {
   return (
     <>
-      <Container>
-        <Typography variant="h1">MainPage</Typography>
-
+      <Container maxWidth="md">
         <Header />
         <ProfileIntro />
         <Skills />

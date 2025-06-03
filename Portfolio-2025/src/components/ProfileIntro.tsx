@@ -5,15 +5,9 @@ function ProfileIntro() {
     <>
       <Container>
         <Box>
-          <img src="/images/Github-bild.jpg" alt="" id="profile-image" />
-        </Box>
-
-        <Box>
-          <Typography>Hej</Typography>
-
-          <Typography>My name is Fatemeh</Typography>
-
-          <Typography>
+          <Typography variant="h3">Hej</Typography>
+          <Typography variant="h4">My name is Fatemeh</Typography>
+          <Typography variant="body1">
             I am currently a front-end development student at Nackademin. With a
             background in architecture and a Master's degree in lighting design
             from KTH, as well as experience as a consultant in the lighting

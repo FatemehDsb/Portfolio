@@ -1,17 +1,24 @@
-import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from "@mui/material";
 
 function Skills() {
   return (
     <>
-      <Box>
-        <Typography>My Skills</Typography>
-        <div>
+      <Container>
+        <Box marginTop={"20px"}>
+          <Typography variant="h5">My Skills</Typography>
           <List>
             <ListItem>
               <ListItemText
                 primary="Front-End:"
                 secondary="HTML, CSS/SCSS, JavaScript,
-                React, Redux, Next.js, AJAX"
+              React, Redux, Next.js, AJAX"
               ></ListItemText>
             </ListItem>
             <ListItem>
@@ -20,24 +27,27 @@ function Skills() {
                 secondary="API Management, Strapi CMS"
               ></ListItemText>
             </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="Databases:"
+                secondary="PostgreSQL, pgAdmin"
+              ></ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="Tools:"
+                secondary="Docker, Git/GitHub"
+              ></ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="Design:"
+                secondary="Figma, InDesign, Photoshop"
+              ></ListItemText>
+            </ListItem>
           </List>
-          <ul>
-            <li>Back-End:</li>
-            <li>API Management, Strapi CMS</li>
-
-            <li>Databases:</li>
-            <li>PostgreSQL, pgAdmin</li>
-
-            <li>Tools:</li>
-            <li>Docker, Git/GitHub</li>
-
-            <li>Design:</li>
-            <li>Figma, InDesign, Photoshop</li>
-          </ul>
-          <br />
-          <img className="skills-img" src="images/Frame 26.png" />
-        </div>
-      </Box>
+        </Box>
+      </Container>
     </>
   );
 }

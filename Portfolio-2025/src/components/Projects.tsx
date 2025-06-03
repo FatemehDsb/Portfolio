@@ -1,52 +1,73 @@
+import {
+  Container,
+  Typography,
+  Card,
+  CardMedia,
+  CardContent,
+  Link,
+} from "@mui/material";
+
+import Grid from "@mui/material/Grid";
+
 function Projects() {
+  const projectData = [
+    {
+      title: "Company Website",
+      image: "/images/company-website.png",
+      description: "Student project made with HTML, SCSS",
+      url: "https://fatemehdsb.github.io/Company-Website/",
+    },
+    {
+      title: "Productivity Assistant",
+      image: "/optimate.png",
+      description: "Student project made with HTML, SCSS, JAVASCRIPT",
+      url: "https://fatemehdsb.github.io/NewProductivityAssistant/",
+    },
+    {
+      title: "Quiz",
+      image: "/images/Quiz.png",
+      description: "Student project made with HTML, SCSS, JAVASCRIPT",
+      url: "https://fatemehdsb.github.io/Quiz/",
+    },
+    {
+      title: "Figma Project",
+      image: "/images/Figma-website.png",
+      description: "/images/Student project made with FIGMA",
+      url: "https://www.figma.com/proto/p7vmDvTi46pPIe3EIfLfVb/Fatemeh-Dastgheib-grafik-Fend23?...",
+    },
+  ];
+
   return (
-    <>
-      <section className="projects-section">
-        <h2 className="secondary-heading">Featured Projects</h2>
+    <Container sx={{ py: 5 }}>
+      <Typography variant="h4" gutterBottom>
+        Featured Projects
+      </Typography>
 
-        <div id="divider"></div>
-
-        <div className="project project box">
-          <a href="https://fatemehdsb.github.io/Company-Website/">
-            <img
-              src="images/company-website.png"
-              alt=""
-              className="project-image"
-            />
-            <label>Student project made with HTML, SCSS</label>
-          </a>
-        </div>
-
-        <div className="project">
-          <a href="https://fatemehdsb.github.io/NewProductivityAssistant/">
-            <img
-              src="optimate.png"
-              alt=""
-              className="project-image_productivity"
-            />
-            <label>Student project made with HTML, SCSS, JAVASCRIPT</label>
-          </a>
-        </div>
-
-        <div className="project">
-          <a href="https://fatemehdsb.github.io/Quiz/">
-            <img src="images/Quiz.png" alt="" className="project-image" />
-            <label>Student project made with HTML, SCSS, JAVASCRIPT</label>
-          </a>
-        </div>
-        <div className="project">
-          <a href="https://www.figma.com/proto/p7vmDvTi46pPIe3EIfLfVb/Fatemeh-Dastgheib-grafik-Fend23?page-id=0%3A1&type=design&node-id=24-545&viewport=532%2C106%2C0.02&t=zhfySCJM0Ez1ff0g-1&scaling=min-zoom&starting-point-node-id=24%3A545&mode=design">
-            <img
-              src="images/Figma-website.png"
-              alt=""
-              className="project-image"
-            />
-            <label>Student project made with FIGMA</label>
-          </a>
-        </div>
-      </section>
-      ;
-    </>
+      <Grid container spacing={4}>
+        {projectData.map((project, index) => (
+          <Grid item xs={4} md={4} key={index}>
+            <Link
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              underline="none"
+            >
+              <Card sx={{ height: "100%" }}>
+                <CardMedia
+                  component="img"
+                  image={project.image}
+                  alt={project.title}
+                />
+                <CardContent>
+                  <Typography variant="body1">{project.description}</Typography>
+                </CardContent>
+              </Card>
+            </Link>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
   );
 }
+
 export default Projects;
