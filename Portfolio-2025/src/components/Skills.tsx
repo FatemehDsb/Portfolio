@@ -1,6 +1,6 @@
 import {
+  Grid,
   Box,
-  Container,
   List,
   ListItem,
   ListItemText,
@@ -8,46 +8,64 @@ import {
 } from "@mui/material";
 
 function Skills() {
+  const skills = [
+    {
+      primary: "Frontendutveckling:",
+      secondary: "HTML, CSS, JavaScript, TypeScript, React, Next.js",
+    },
+    {
+      primary: "UI/Designramverk:",
+      secondary: "Material-UI, Bootstrap, Tailwind CSS",
+    },
+    {
+      primary: "State & Data Management:",
+      secondary: "Redux Toolkit, TanStack Query, Strapi CMS",
+    },
+    {
+      primary: "Testing & Build Tools:",
+      secondary: "Vite, Docker",
+    },
+    {
+      primary: "Databaser:",
+      secondary: "PostgreSQL, PgAdmin",
+    },
+    {
+      primary: "Versionshantering & Agilt arbete:",
+      secondary: "Git, GitHub, Jira (Agile/Scrum)",
+    },
+    {
+      primary: "Design & Prototyping:",
+      secondary: "Figma, Adobe InDesign, Photoshop",
+    },
+    {
+      primary: "Teknisk ritning & modellering:",
+      secondary: "AutoCAD, Revit",
+    },
+    {
+      primary: "Övrigt & Kompetenser:",
+      secondary: "Problemlösning, Stark designkänsla, Samarbetsvillig",
+    },
+  ];
+
   return (
     <>
-      <Container>
-        <Box marginTop={"20px"}>
-          <Typography variant="h5">My Skills</Typography>
-          <List>
-            <ListItem>
-              <ListItemText
-                primary="Front-End:"
-                secondary="HTML, CSS/SCSS, JavaScript,
-              React, Redux, Next.js, AJAX"
-              ></ListItemText>
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="Back-End:"
-                secondary="API Management, Strapi CMS"
-              ></ListItemText>
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="Databases:"
-                secondary="PostgreSQL, pgAdmin"
-              ></ListItemText>
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="Tools:"
-                secondary="Docker, Git/GitHub"
-              ></ListItemText>
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="Design:"
-                secondary="Figma, InDesign, Photoshop"
-              ></ListItemText>
-            </ListItem>
-          </List>
-        </Box>
-      </Container>
+      <Box mt={4}>
+        <Typography variant="h6">SKILLS</Typography>
+        <Grid container spacing={1}>
+          {skills.map((element) => (
+            <Grid xs={12} sm={6} sx={{ border: "1px solid black" }}>
+              <List disablePadding dense={true}>
+                <ListItem key={element.primary} sx={{ py: 0.1 }}>
+                  <ListItemText
+                    primary={element.primary}
+                    secondary={element.secondary}
+                  ></ListItemText>
+                </ListItem>
+              </List>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
     </>
   );
 }

@@ -1,10 +1,10 @@
 import {
-  Container,
   Typography,
   Card,
   CardMedia,
   CardContent,
   Link,
+  Box,
 } from "@mui/material";
 
 import Grid from "@mui/material/Grid";
@@ -19,7 +19,7 @@ function Projects() {
     },
     {
       title: "Productivity Assistant",
-      image: "/optimate.png",
+      image: "/images/optimate.png",
       description: "Student project made with HTML, SCSS, JAVASCRIPT",
       url: "https://fatemehdsb.github.io/NewProductivityAssistant/",
     },
@@ -38,35 +38,39 @@ function Projects() {
   ];
 
   return (
-    <Container sx={{ py: 5 }}>
-      <Typography variant="h4" gutterBottom>
-        Featured Projects
-      </Typography>
+    <>
+      <Box mt={4}>
+        <Typography variant="h6" gutterBottom>
+          PROJECTS
+        </Typography>
 
-      <Grid container spacing={4}>
-        {projectData.map((project, index) => (
-          <Grid item xs={4} md={4} key={index}>
-            <Link
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              underline="none"
-            >
-              <Card sx={{ height: "100%" }}>
-                <CardMedia
-                  component="img"
-                  image={project.image}
-                  alt={project.title}
-                />
-                <CardContent>
-                  <Typography variant="body1">{project.description}</Typography>
-                </CardContent>
-              </Card>
-            </Link>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+        <Grid container spacing={4}>
+          {projectData.map((project, index) => (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+              <Link
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                underline="none"
+              >
+                <Card sx={{ maxWidth: 200, height: 300 }}>
+                  <CardMedia
+                    component="img"
+                    image={project.image}
+                    alt={project.title}
+                  />
+                  <CardContent>
+                    <Typography variant="body1">
+                      {project.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Link>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+    </>
   );
 }
 
