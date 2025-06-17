@@ -31,8 +31,8 @@ function Projects() {
     },
     {
       title: "Figma Project",
-      image: "/images/Figma-website.png",
-      description: "/images/Student project made with FIGMA",
+      image: "/images/Figma2.png",
+      description: "Student project made with FIGMA",
       url: "https://www.figma.com/proto/p7vmDvTi46pPIe3EIfLfVb/Fatemeh-Dastgheib-grafik-Fend23?...",
     },
   ];

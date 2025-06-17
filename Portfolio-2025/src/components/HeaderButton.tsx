@@ -11,7 +11,6 @@ function HeaderButton({ label, href }: HeaderButtonProps) {
       <Button
         size="small"
         variant="outlined"
-        color="black"
         href={href}
         target="_blank"
         rel="noopener noreferrer"

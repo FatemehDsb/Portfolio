@@ -2,13 +2,13 @@ import { Box, IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import HeaderButton from "./HeaderButton";
-import Grid from "@mui/material/Grid";
+import { Grid } from "@mui/material";
 
 function Header() {
   const elements = [
-    { label: "ABOUT ME", href: "address" },
-    { label: "PROJECTS", href: "address" },
-    { label: "RESUME", href: "address" },
+    // { label: "ABOUT ME", href: "address" },
+    // { label: "PROJECTS", href: "address" },
+    { label: "RESUME", href: "/pdf/Fatemeh_Dastgheib_Resume (2).pdf" },
   ];
 
   return (
@@ -41,7 +41,7 @@ function Header() {
 
         <Grid container spacing={2}>
           {elements.map((element) => (
-            <Grid xs={12} sm={4} key={element.label}>
+            <Grid item xs={12} sm={4} key={element.label}>
               <HeaderButton label={element.label} href={element.href} />
             </Grid>
           ))}
