@@ -7,7 +7,6 @@ import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
 
 function MainPage() {
-  console.log("App is rendering");
   return (
     <Container maxWidth="md">
       <Header />
