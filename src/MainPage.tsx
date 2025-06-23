@@ -7,9 +7,9 @@ import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
 
 function MainPage() {
+  console.log("App is rendering");
   return (
     <Container maxWidth="md">
-      console.log("App is rendering");
       <Header />
       <Divider sx={{ mt: 5 }} />
       <ProfileIntro />
