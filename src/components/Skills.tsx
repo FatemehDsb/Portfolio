@@ -53,13 +53,19 @@ function Skills() {
         <Typography variant="h6">SKILLS</Typography>
         <Grid container spacing={1}>
           {skills.map((element) => (
-            <Grid xs={12} sm={6} sx={{ border: "1px solid black" }}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              // sx={{ border: "1px solid black" }}
+              key={element.primary}
+            >
               <List disablePadding dense={true}>
                 <ListItem key={element.primary} sx={{ py: 0.1 }}>
                   <ListItemText
                     primary={element.primary}
                     secondary={element.secondary}
-                  ></ListItemText>
+                  />
                 </ListItem>
               </List>
             </Grid>
