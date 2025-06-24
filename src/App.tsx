@@ -1,15 +1,15 @@
 import MainPage from "./MainPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   console.log("App is rendering");
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
