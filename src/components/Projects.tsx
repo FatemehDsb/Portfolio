@@ -13,25 +13,25 @@ function Projects() {
   const projectData = [
     {
       title: "Company Website",
-      image: new URL("../images/company-website.png", import.meta.url).href,
+      image: "/Portfolio/images/company-website.png",
       description: "Student project made with HTML, SCSS",
       url: "https://fatemehdsb.github.io/Company-Website/",
     },
     {
       title: "Productivity Assistant",
-      image: new URL("../images/optimate.png", import.meta.url).href,
+      image: "/Portfolio/images/optimate.png",
       description: "Student project made with HTML, SCSS, JAVASCRIPT",
       url: "https://fatemehdsb.github.io/NewProductivityAssistant/",
     },
     {
       title: "Quiz",
-      image: new URL("../images/Quiz.png", import.meta.url).href,
+      image: "/Portfolio/images/Quiz.png",
       description: "Student project made with HTML, SCSS, JAVASCRIPT",
       url: "https://fatemehdsb.github.io/Quiz/",
     },
     {
       title: "Figma Project",
-      image: new URL("../images/Figma2.png", import.meta.url).href,
+      image: "/Portfolio/images/Figma2.png",
       description: "Student project made with FIGMA",
       url: "https://www.figma.com/proto/p7vmDvTi46pPIe3EIfLfVb/Fatemeh-Dastgheib-grafik-Fend23?...",
     },
