@@ -8,7 +8,10 @@ function Header() {
   const elements = [
     // { label: "ABOUT ME", href: "address" },
     // { label: "PROJECTS", href: "address" },
-    { label: "RESUME", href: "pdf/Fatemeh_Dastgheib_Resume (2).pdf" },
+    {
+      label: "RESUME",
+      href: "/Portfolio/pdf/Fatemeh_Dastgheib_Resume (2).pdf",
+    },
   ];
 
   return (
