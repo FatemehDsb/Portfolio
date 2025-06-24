@@ -3,6 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import HeaderButton from "./HeaderButton";
 import { Grid } from "@mui/material";
+import { border } from "@mui/system";
 
 function Header() {
   const elements = [
@@ -21,8 +22,10 @@ function Header() {
         flexWrap="wrap"
         justifyContent={"space-between"}
         margin={"10px"}
+        // border={"1px solid black"}
+        flexDirection={"row"}
       >
-        <Box>
+        <Grid sx={{ display: "flex" }}>
           <IconButton
             component="a"
             href="https://github.com/FatemehDsb"
@@ -40,9 +43,9 @@ function Header() {
           >
             <LinkedInIcon />
           </IconButton>
-        </Box>
+        </Grid>
 
-        <Grid container spacing={2}>
+        <Grid container>
           {elements.map((element) => (
             <Grid item xs={12} sm={4} key={element.label}>
               <HeaderButton label={element.label} href={element.href} />
