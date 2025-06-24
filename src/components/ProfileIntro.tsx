@@ -10,13 +10,11 @@ function ProfileIntro() {
         flexDirection={{ xs: "column", md: "row" }}
       >
         <Box
-          minWidth={200}
+          maxWidth={300}
           component="img"
-          src="images/IMG_8369.JPEG"
+          src="images/cartoonMesvart.jpg"
           sx={{
-            height: "200px",
-            width: "200px",
-            borderColor: "black",
+            // minWidth: "200px",
             display: "block",
             mx: "auto",
           }}

@@ -51,18 +51,30 @@ function Skills() {
     <>
       <Box mt={4}>
         <Typography variant="h6">SKILLS</Typography>
-        <Grid container spacing={1}>
+        <Grid container spacing={1} sx={{ marginTop: "5px" }}>
           {skills.map((element) => (
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              // sx={{ border: "1px solid black" }}
-              key={element.primary}
-            >
-              <List disablePadding dense={true}>
-                <ListItem key={element.primary} sx={{ py: 0.1 }}>
+            <Grid xs={12} sm={6} key={element.primary}>
+              <List
+                disablePadding
+                dense={true}
+                sx={{
+                  display: "inline-block",
+                }}
+              >
+                <ListItem
+                  key={element.primary}
+                  sx={{
+                    py: 0.1,
+
+                    display: "inline-block",
+                  }}
+                >
                   <ListItemText
+                    sx={{
+                      border: "1px solid black",
+                      display: "inline-block",
+                      paddingLeft: "2px",
+                    }}
                     primary={element.primary}
                     secondary={element.secondary}
                   />

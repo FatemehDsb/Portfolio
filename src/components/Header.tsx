@@ -3,7 +3,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import HeaderButton from "./HeaderButton";
 import { Grid } from "@mui/material";
-import { border } from "@mui/system";
 
 function Header() {
   const elements = [
